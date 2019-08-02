@@ -1,2 +1,1 @@
-# website
-2000 Class Association website
+# 2000 Class Association website
