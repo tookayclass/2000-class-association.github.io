@@ -1,6 +1,6 @@
 ---
 layout: post
-author: jack
+author: Ian Frogley
 title: "Race results: Millenium Series"
 ---
 
