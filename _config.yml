@@ -12,3 +12,7 @@ keywords:
 org: 2000 Class Association
 established: 1999
 licence: https://creativecommons.org/licenses/by/4.0/
+
+collections:
+  events:
+    output: true
