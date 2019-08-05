@@ -1,0 +1,22 @@
+---
+layout: default
+title: Events
+---
+<h1>Events</h1>
+
+<ul>
+  {% for event in site.events %}
+    <li>
+      <h2>{{ event.title }}</h2>
+      <dl>
+        <dt>Start date</dt>
+        <dd>{{ event.start_date }}</dd>
+        <dt>End date</dt>
+        <dd>{{ event.end_date }}</dd>
+        <dt>Venue</dt>
+        <dd>{{ event.venue }}</dd>
+      </dl>
+      <p>{{ event.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
