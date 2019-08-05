@@ -8,10 +8,10 @@
   link: /about.html
   items:
   - name: Constitution
-    link: /about.constitution.hml
+    link: /about.constitution.html
   - name: Committee
-    link: /about.committee.hml
+    link: /about.committee.html
   - name: Measurment rules
-    link: /about.measurement-rules.hml
+    link: /about.measurement-rules.html
   - name: Event and series rules
-    link: /about.event-series-rules.hml
+    link: /about.event-series-rules.html
