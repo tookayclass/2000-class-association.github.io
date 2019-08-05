@@ -7,6 +7,8 @@
 - name: About
   link: /about.html
   items:
+  - name: About
+    link: /about.html
   - name: Constitution
     link: /about.constitution.html
   - name: Committee
