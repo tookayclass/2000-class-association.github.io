@@ -6,3 +6,12 @@
   link: /events.html
 - name: About
   link: /about.html
+  items:
+  - name: Constitution
+    link: /about.constitution.hml
+  - name: Committee
+    link: /about.committee.hml
+  - name: Measurment rules
+    link: /about.measurement-rules.hml
+  - name: Event and series rules
+    link: /about.event-series-rules.hml
