@@ -7,16 +7,13 @@ title: Events
 <ul>
   {% for event in site.events %}
     <li>
-      <h2>{{ event.title }}</h2>
-      <dl>
-        <dt>Start date</dt>
-        <dd>{{ event.start_date }}</dd>
-        <dt>End date</dt>
-        <dd>{{ event.end_date }}</dd>
-        <dt>Venue</dt>
-        <dd>{{ event.venue }}</dd>
-      </dl>
-      <p>{{ event.content | markdownify }}</p>
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">{{ event.start_date | date: '%3 %b %Y' }}‒{{ event.end_date | date: '%3 %b %Y' }}, {{ event.venue }}</h6>
+        <h5 class="card-title">{{ event.title }}</h5>
+        <p class="card-text">{{ event.content | markdownify }}</p>
+        <a href="#" class="card-link">More info &raquo;</a>
+        <a href="#" class="card-link">Register &raquo;</a>
+      </div>
     </li>
   {% endfor %}
 </ul>
