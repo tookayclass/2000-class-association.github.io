@@ -1,9 +1,9 @@
 <ul>
 {% for item in site.data.navigation %}
-  <li>{{ item.title }}
+  <li>{{ item.name }}
     <ul>
       {% for subitem in item.items %}
-        <li><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+        <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
       {% endfor %}
     </ul>
   </li>
