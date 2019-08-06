@@ -1,15 +1,15 @@
-url: https://2000-class-association.github.io
+url: https://beta.2000class.org
 title: 2000 Class Association
 subtitle: Probably the best entry-level family performance asymmetric sailing dinghy in the world!
 keywords:
-- Laser 2000
-- RS 2000
-- sailing
-- dinghy
-- asymmetric
-- association
-- club
-org: 2000 Class Association
+  - Laser 2000
+  - RS 2000
+  - sailing
+  - dinghy
+  - asymmetric
+  - association
+  - club
+author: 2000 Class Association
 established: 1999
 licence: https://creativecommons.org/licenses/by/4.0/
 
