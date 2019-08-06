@@ -2,9 +2,9 @@
 layout: default
 title: News & articles
 ---
-<h1>News & articles</h1>
+<h1 class="mb-3">News & articles</h1>
 
-<ul>
+<ul class="list-unstyled">
   {% for post in site.posts %}
     <li>
       <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
