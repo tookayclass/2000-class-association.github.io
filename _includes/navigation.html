@@ -1,5 +1,12 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ site.url }}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="collapse navbar-collapse">
+    <a class="navbar-brand" href="#"><img src="2000inv.png" height="30px" alt="2000 dinghy logo"></a>
+    <ul class="navbar-nav mr-auto">
+      {% for item in site.data.navigation %}
+        <li class="nav-item {% if page.url == item.link %} active{% endif %}">
+          <a class="nav-link" href="{{ site.url }}{{ item.link }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </nav>
