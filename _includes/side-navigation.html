@@ -1,6 +1,6 @@
 <ul>
 {% for item in site.data.navigation %}
-  <li class="{% if item.link == page.url %}active{% endif %}"><a href="{{ site.url }}{{ item.link }}">{{ item.name }}</a></li>
+  <li class="{% if item.link == page.url %}active{% endif %}"><a href="{{ site.url }}{{ item.link }}">{{ item.name }}</a>
     <ul>
       {% for subitem in item.items %}
         <li class="{% if subitem.link == page.url %}active{% endif %}"><a href="{{ site.url }}{{ subitem.link }}">{{ subitem.name }}</a></li>
