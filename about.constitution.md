@@ -1,4 +1,6 @@
-# Constitution
+---
+title: Constitution
+---
 
 Version 2.1
 

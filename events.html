@@ -1,18 +1,16 @@
 ---
-layout: default
 title: Events
 ---
-<h1>Events</h1>
 
 <ul class="list-unstyled">
   {% for event in site.events %}
     <li>
-        <h3 class="text-muted">{{ event.start_date | date_to_string }}‒{{ event.end_date | date_to_string }}, {{ event.venue }}</h3>
-        <h2><a href="{{ event.url | absolute_url }}">{{ event.title }}</a></h2>
-        {{ event.content | markdownify }}
-        <a href="{{ event.url | absolute_url }}">More info &raquo;</a>
-        <a href="#">Register &raquo;</a>
-        <hr>
+      <h3 class="text-muted">{{ event.start_date | date_to_string }}‒{{ event.end_date | date_to_string }}, {{ event.venue }}</h3>
+      <h2><a href="{{ event.url | absolute_url }}">{{ event.title }}</a></h2>
+      {{ event.content | markdownify }}
+      <a href="{{ event.url | absolute_url }}">More info &raquo;</a>
+      <a href="#">Register &raquo;</a>
+      <hr>
     </li>
   {% endfor %}
 </ul>
