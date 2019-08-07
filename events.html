@@ -9,7 +9,7 @@ title: Events
     <li>
         <h3 class="text-muted">{{ event.start_date | date_to_string }}‒{{ event.end_date | date_to_string }}, {{ event.venue }}</h3>
         <h2><a href="{{ site.url }}{{ event.url }}">{{ event.title }}</a></h2>
-        <p>{{ event.content | markdownify }}</p>
+        {{ event.content | markdownify }}
         <a href="{{ site.url }}{{ event.url }}">More info &raquo;</a>
         <a href="#">Register &raquo;</a>
         <hr>
