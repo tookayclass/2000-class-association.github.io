@@ -35,3 +35,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+
+exclude:
+  - Gemfile
+  - "*.ps1"
