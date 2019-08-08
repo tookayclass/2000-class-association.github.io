@@ -9,6 +9,8 @@
   items:
   - name: About
     link: /about.html
+  - name: Join us
+    link: /about.join.html
   - name: Constitution
     link: /about.constitution.html
   - name: Committee
