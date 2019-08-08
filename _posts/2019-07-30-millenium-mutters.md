@@ -1,5 +1,4 @@
 ---
-layout: post
 title: New edition of Millenium Mutterings out now!
 author: Sarah Yardley
 ---
