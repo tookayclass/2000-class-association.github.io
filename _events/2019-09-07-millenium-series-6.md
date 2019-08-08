@@ -1,7 +1,7 @@
 ---
 title: Millenium Series 6
-start_date: 2019-09-07
-end_date: 2019-09-08
+date: 2019-09-07
+date_end: 2019-09-08
 venue: Stone Sailing Club
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: National Championships
-start_date: 2019-08-10
-end_date: 2019-08-16
+date: 2019-08-10
+date_end: 2019-08-16
 venue: Tenby Sailing Club
 ---
 

@@ -4,9 +4,9 @@ layout: page
 
 <dl>
   <dt>Start date</dt>
-  <dd>{{ page.start_date }}</dd>
+  <dd>{{ page.date | date_to_string }}</dd>
   <dt>End date</dt>
-  <dd>{{ page.end_date }}</dd>
+  <dd>{{ page.date_end | date_to_string }}</dd>
   <dt>Venue</dt>
   <dd>{{ page.venue }}</dd>
 </dl>
