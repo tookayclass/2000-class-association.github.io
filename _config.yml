@@ -8,6 +8,19 @@ description: >
   and families alike.
 author: 2000 Class Association
 established: 1999
+email:
+  info@2000class.org
+twitter:
+  username: 2000class
+  card: summary
+facebook:
+  publisher: https://www.facebook.com/2000classassociation/
+social:
+  links:
+    - mailto:info@2000class.org
+    - https://www.facebook.com/2000classassociation/
+    - https://twitter.com/2000class
+logo: /assets/img/logo-2000-class-association.png
 licence: https://creativecommons.org/licenses/by/4.0/
 lang: en_GB
 

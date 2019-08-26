@@ -9,7 +9,7 @@ title: Home
     <div class="container">
       <h1 class="display-3"><mark class="text-light py-0">{{ site.title }}</mark></h1>
       <p class="mb-5"><mark  class="text-light px-3">{{ site.subtitle }}</mark></p>
-      <p><a class="btn btn-lg btn-danger" href="{{ "/about.join.html" | absolute }}" role="button">Join today!</a></p>
+      <p><a class="btn btn-lg btn-danger" href="{{ "/about.join.html" | absolute_url }}" role="button">Join today!</a></p>
     </div>
   </div>
 
@@ -33,16 +33,11 @@ title: Home
           <img src="{{ "/assets/img/logo-2000-class-association.png" | absolute_url }}" class="img-fluid mb-5" alt="2000 dinghy logo">
           <p>The <i>2000 Class Association</i> is made up of 2000-dinghy sailors. The 2000, formerly known as the Laser 2000, is an entry-level performance assymetric sailing dinghy. It is equally suitable for cruisers, families as well as serious racers.</p>
           <p>The association organises racing series, training and other events throughout the UK.</p>
-          <p>Do you sail a 2000? <a href="{{ "/about.join.html" | absolute }}">Become a member today</a>.</p>
+          <p>Do you sail a 2000? <a href="{{ "/about.join.html" | absolute_url }}">Become a member today</a>.</p>
         </div>
 
         <div class="p-4">
-          <h2 class="mb-3">Stay in touch</h2>
-          <ol class="list-unstyled">
-            <li><a href="mailto:info@2000class.org">Email</a></li>
-            <li><a href="https://www.facebook.com/2000classassociation/">Facebook</a></li>
-            <li><a href="https://twitter.com/2000class">Twitter</a></li>
-          </ol>
+          {% include social-list.html %}
         </div>
 
       </aside>
