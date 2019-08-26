@@ -1,0 +1,14 @@
+<h2 class="mb-3">News and articles</h2>
+
+{% for post in site.posts %}
+  <div class="card mb-3">
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date_to_string }}</h6>
+      <h5 class="card-title"><a href="{{ post.url | absolute }}" >{{ post.title }}</a></h5>
+      {{ post.excerpt }}
+      <a href="{{ post.url | absolute }}" class="card-link">Read more &raquo;</a>
+    </div>
+  </div>
+{% endfor %}
+
+<a href="{{ "/news.html" | absolute }}">More news and articles &raquo;</a>
