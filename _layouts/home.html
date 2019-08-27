@@ -2,4 +2,38 @@
 layout: base
 ---
 
-{{ content }}
+<main>
+  
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3"><mark class="text-light py-0">{{ site.title }}</mark></h1>
+      <p class="mb-5"><mark  class="text-light px-3">{{ site.subtitle }}</mark></p>
+      <p><a class="btn btn-lg btn-danger" href="{{ "/about.join.html" | absolute_url }}" role="button">Join today!</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-4">
+        {% include news-list.html %}
+      </div>
+
+      <div class="col-md-4">
+        {% include event-list.html %}
+      </div>
+
+      <aside class="col-md-4">
+        <div class="p-4 mb-3 bg-light rounded">
+          {{ content }}
+        </div>
+        <div class="p-4">
+          {% include social-list.html %}
+        </div>
+      </aside>
+
+    </div>
+    <hr>
+  </div>
+
+</main>
