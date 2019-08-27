@@ -5,17 +5,17 @@
 - name: Events
   link: /events.html
 - name: About
-  link: /about.html
+  link: /about/
   items:
   - name: About
-    link: /about.html
+    link: /about/
   - name: Join us
-    link: /about.join.html
+    link: /about/join.html
   - name: Constitution
-    link: /about.constitution.html
+    link: /about/constitution.html
   - name: Committee
-    link: /about.committee.html
+    link: /about/committee.html
   - name: Measurement rules
-    link: /about.measurement-rules.html
+    link: /about/measurement-rules.html
   - name: Event and series rules
-    link: /about.event-series-rules.html
+    link: /about/event-series-rules.html
