@@ -2,17 +2,22 @@
 title: Committee
 ---
 
-| Position | Name | E-mail address |
-| ---------| ---- | -------------- |
-| President | Trevor Bradley | <president@2000class.org> |
-| Chairman  | Kevin O'Brien  | <chair@2000class.org> |
-| Vice Chairman | John Best | <vicechair@2000class.org> |
-| Membership Secretary | Guy & Juie Boswell | <sec@2000class.org> |
-| Treasurer | Helen Phillips | <accounts@2000class.org> |
-| Sailing Secretary | Rob Burridge | <sailsec@2000class.org> |
-| Northern Representative | James Macgregor | <northrep@2000class.org> |
-| Millennium Mutterings Editor | Sarah Yardley | <editor@2000class.org> |
-| Technical Officer | Richard Hudson | <tech@2000class.org> |
-| Youth Representative | Ian Hudson | <youth@2000class.org> |
-| Builders Representative | Alex Newton-Southon | <build@2000class.org> |
-| Publicity Officer | Mark Foley | <media@2000class.org> |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Role</th>
+      <th scope="col">Name</th>
+      <th scope="col">E-mail address</th>
+    </tr>
+  </thead>
+  <tbody>
+  	{% for member in site.data.committee %}
+    <tr>
+      <td>{{ member.role }}</td>
+      <td>{{ member.name }}</td>
+      <td><a href="mailto:{{ member.email }}">{{ member.email }}</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
