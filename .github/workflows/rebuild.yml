@@ -1,0 +1,12 @@
+name: Rebuild site
+on:
+  schedule:
+    - cron:  '0 0 * * *'  # At midnight every day
+
+jobs:
+  build:
+    name: Empty commit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: echo The time was ${{ steps.hello.outputs.time }}
