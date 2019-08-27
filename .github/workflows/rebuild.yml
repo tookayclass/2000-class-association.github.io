@@ -1,7 +1,7 @@
 name: Rebuild site
 on:
   schedule:
-    - cron:  '0 0 1,15 * *'  # 1st and 15th day of month at midnight
+    - cron:  '0 0 * * *'  # At midnight every day
 
 jobs:
   build:
