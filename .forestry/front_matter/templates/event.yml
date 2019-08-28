@@ -1,0 +1,16 @@
+---
+label: Event
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: date_end
+  label: date_end
+- type: text
+  name: venue
+  label: venue
