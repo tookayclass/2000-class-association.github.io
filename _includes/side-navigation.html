@@ -1,4 +1,4 @@
-<nav class="list-group">
+<nav class="list-group mt-4">
   {% for item in site.data.navigation %}
 
     <a class="list-group-item list-group-item-action{% if item.link == page.url %} active{% endif %}" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
