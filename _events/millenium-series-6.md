@@ -1,9 +1,9 @@
 ---
-title: Millenium Series 6
-date: 2019-09-07
-date_end: 2019-09-08
-venue: Stone Sailing Club
+title: Millenium Series 7
+date: 2019-09-27 23:00:00 +0000
+date_end: 2019-09-27 23:00:00 +0000
+venue: Bouch Beech Sailing Club
 published: false
 
 ---
-Millenium Series 6, two day event.
+Millenium Series 7, one day event.
