@@ -8,3 +8,5 @@ fields:
 - type: text
   name: author
   label: author
+pages:
+- _posts/lorem-ipsum-dolor-sit-amet.md
