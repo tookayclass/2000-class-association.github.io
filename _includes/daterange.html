@@ -1,0 +1,13 @@
+{%- assign from_timestamp = include.from | date: '%s' -%}
+{%- assign to_timestamp   = include.to   | date: '%s' -%}
+{%- assign from_month     = include.from | date: '%b' -%}
+{%- assign to_month       = include.to   | date: '%b' -%}
+{%- if to_timestamp > from_timestamp -%}
+  {%- if from_month != to_month -%}
+    {{- include.from | date: '%e %b' }}‒{{ include.to | date: '%e %b %Y' -}}
+  {%- else -%}
+    {{- include.from | date: '%e' }}‒{{ include.to | date: '%e %b %Y' -}}
+  {%- endif -%}
+{%- else -%}
+  {{- include.from | date: '%e %b %Y' -}}
+{%- endif -%}
