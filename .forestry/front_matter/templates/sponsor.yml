@@ -11,7 +11,7 @@ fields:
 - name: logo
   type: file
   config:
-    maxSize: 250
+    maxSize: '0.5'
   label: Logo
 - name: website
   type: text
