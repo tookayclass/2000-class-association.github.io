@@ -6,12 +6,12 @@ fields:
 - name: name
   type: text
   config:
-    required: false
+    required: true
   label: Name
 - name: logo
-  type: text
+  type: file
   config:
-    required: false
+    maxSize: 250
   label: Logo
 - name: website
   type: text
