@@ -5,8 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: jekyll-posts
-  label: News article
-  create: all
+  label: News articles
+  create: documents
   templates:
   - article
 - type: directory
@@ -19,6 +19,11 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
+- type: directory
+  path: _sponsors
+  label: Sponsors
+  create: documents
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
