@@ -23,3 +23,5 @@ fields:
   config:
     required: false
   label: Sponsorship
+pages:
+- _sponsors/noble-marine.md
