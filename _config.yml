@@ -27,6 +27,8 @@ lang: en_GB
 collections:
   events:
     output: true
+  sponsors:
+    output: false
 
 defaults:
   - scope:
