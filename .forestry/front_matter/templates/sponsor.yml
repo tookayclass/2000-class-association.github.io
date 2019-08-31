@@ -1,4 +1,24 @@
 ---
 label: Sponsor
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+- name: logo
+  type: text
+  config:
+    required: false
+  label: Logo
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+- name: sponsorship
+  type: text
+  config:
+    required: false
+  label: Sponsorship
