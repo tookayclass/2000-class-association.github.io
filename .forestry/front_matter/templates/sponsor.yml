@@ -24,4 +24,5 @@ fields:
     required: false
   label: Sponsorship
 pages:
+- _sponsors/hyde-sails.md
 - _sponsors/noble-marine.md
