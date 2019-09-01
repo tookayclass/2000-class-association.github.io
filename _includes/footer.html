@@ -1,13 +1,5 @@
 <footer class="container">
-  <h4>Our sponsors</h4>
-  <div class="row">
-    {% for sponsor in site.sponsors %}
-    <div class="col-md-3">
-      <p><small>{{ sponsor.sponsorship }}</small></p>
-      <img src="{{ sponsor.logo }}" class="img-fluid" alt="{{ sponsor.name }} logo">
-    </div>
-    {% endfor %}
-  </div>
+  {% include sponsors-list.html %}  
   <hr>
   <p>Copyright © {{ site.established }}‒{{ site.time | date: "%Y" }} {{ site.author }}. <a href="{{ site.licence }}">Some rights reserved</a>.</p>
 </footer>

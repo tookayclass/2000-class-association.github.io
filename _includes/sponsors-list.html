@@ -1,0 +1,11 @@
+{% assign sponsors = site.sponsors | sort: "order" %}
+
+<h4>Our sponsors</h4>
+<div class="row">
+  {% for sponsor in sponsors %}
+  <div class="col-md-3">
+    <p><small>{{ sponsor.sponsorship }}</small></p>
+    <img src="{{ sponsor.logo }}" class="img-fluid" alt="{{ sponsor.name }} logo">
+  </div>
+  {% endfor %}
+</div>

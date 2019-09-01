@@ -29,6 +29,7 @@ collections:
     output: true
   sponsors:
     output: false
+    sort_by: order
 
 defaults:
   - scope:
