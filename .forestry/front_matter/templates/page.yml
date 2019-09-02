@@ -25,5 +25,5 @@ fields:
   config:
     min: '0'
     max: '10'
-    labelField: 
+    labelField: title
   label: Attachments
