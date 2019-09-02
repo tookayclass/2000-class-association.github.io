@@ -10,7 +10,7 @@ fields:
 - name: attachments
   type: field_group_list
   fields:
-  - name: document
+  - name: path
     type: file
     config:
       maxSize: '5'
