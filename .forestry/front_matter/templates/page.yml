@@ -5,3 +5,25 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
+- name: attachments
+  type: field_group_list
+  fields:
+  - name: document
+    type: file
+    config:
+      maxSize: '5'
+    label: Document
+    description: PDF document or image file
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+    description: Title or short description
+  config:
+    min: '0'
+    max: '10'
+    labelField: 
+  label: Attachments
