@@ -1,7 +1,7 @@
 ---
 title: Event and series rules
 attachments:
-- document: "/uploads/2019/09/02/Event__Series_Rules_V1_2-1.pdf"
+- path: "/uploads/2019/09/02/Event__Series_Rules_V1_2-1.pdf"
   title: Event and series rules
 
 ---
