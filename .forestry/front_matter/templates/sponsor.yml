@@ -8,22 +8,37 @@ fields:
   config:
     required: true
   label: Name
+  description: Company name
 - name: logo
   type: file
   config:
     maxSize: '0.5'
   label: Logo
+  description: Company logo
 - name: website
   type: text
   config:
-    required: false
+    required: true
   label: Website
+  description: Link to website (including "https://...")
 - name: sponsorship
   type: text
   config:
-    required: false
+    required: true
   label: Sponsorship
+  description: Sponsored event or activity
+- name: order
+  type: number
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: '1'
+    required: true
+  label: Order
+  description: Sort sponsors by this value
 pages:
-- _sponsors/rs-sailing.md
 - _sponsors/hyde-sails.md
 - _sponsors/noble-marine.md
+- _sponsors/rs-sailing.md
