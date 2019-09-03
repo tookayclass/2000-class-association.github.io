@@ -34,3 +34,5 @@ fields:
     max: '10'
     labelField: title
   label: Attachments
+pages:
+- _events/inland-championships-2019.md
