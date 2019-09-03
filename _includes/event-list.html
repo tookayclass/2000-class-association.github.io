@@ -25,7 +25,7 @@
       <div class="card-body">
         <h6 class="card-subtitle mb-2 text-muted">{% include daterange.html from=event.date to=event.date_end %}, {{ event.venue }}</h6>
         <h5 class="card-title"><a href="{{ event.url | absolute_url }}" >{{ event.title }}</a></h5>
-        {{ event.content | markdownify }}
+        <p>{{ event.content | strip_html | strip_newlines | truncatewords: 30 }}</p>
         <a href="{{ event.url | absolute_url }}" class="card-link">Read more &raquo;</a>
       </div>
     </div>
