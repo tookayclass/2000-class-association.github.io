@@ -1,0 +1,12 @@
+{% if page.attachments.size > 0 %}
+  <h3 class="mt-4 mb-2">Relevant documents</h3>
+
+  <ul class="list-unstyled">
+    {% for attachment in page.attachments %}
+      {% assign file_ext = attachment.path | split: "." | last | downcase %}
+      <li>
+        <a href="{{ attachment.path | absolute_url }}" title="View or download the document">{{ attachment.title }} ({{ file_ext }})</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
