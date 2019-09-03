@@ -3,6 +3,9 @@ title: Millenium Series 6
 date: 2019-09-07
 date_end: 2019-09-08
 venue: Stone Sailing Club
+attachments:
+- path: "/uploads/2019/09/03/2019_MS6_Stone_Notes.pdf"
+  title: Additional notes Millenium Series 6
 
 ---
 At Stone Sailing Club (SSC) we have a new 2000 fleet, currently we have 10 2000s being regularly sailed. We are looking forward to hosting the Millenium Series 6: Open Meeting at SSC and would love for other 2000s to join us for what will be a fantastic event on the beautiful Blackwater Estuary.
