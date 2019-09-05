@@ -38,7 +38,3 @@ fields:
     required: true
   label: Order
   description: Sort sponsors by this value
-pages:
-- _sponsors/hyde-sails.md
-- _sponsors/noble-marine.md
-- _sponsors/rs-sailing.md
