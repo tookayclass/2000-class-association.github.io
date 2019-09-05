@@ -42,4 +42,5 @@ fields:
     labelField: title
   label: Attachments
 pages:
+- _events/test-event.md
 - _events/inland-championships-2019.md
