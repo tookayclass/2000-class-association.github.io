@@ -30,14 +30,13 @@ fields:
 - name: order
   type: number
   default: 0
-  required: true
   config:
     min: 
     max: 
     step: '1'
     required: true
   label: Order
-  description: Sort sponsors by this value
+  description: Display order
 pages:
 - _sponsors/hyde-sails.md
 - _sponsors/noble-marine.md
