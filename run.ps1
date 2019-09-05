@@ -1,1 +1,1 @@
-docker run --rm -e "JEKYLL_ENV=docker" --volume=${PWD}:/srv/jekyll --volume=jekyllbundlecache:/usr/local/bundle -p 4000:4000 -it jekyll/jekyll jekyll serve --config _config.yml,_config.docker.yml
+docker run --rm -e "JEKYLL_ENV=docker" --volume=${PWD}:/srv/jekyll --volume=jekyllbundlecache:/usr/local/bundle -p 4000:4000 -it jekyll/jekyll:3.8.5 jekyll serve --verbose --config _config.yml,_config.docker.yml
