@@ -6,6 +6,6 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - run: echo The time was ${{ steps.hello.outputs.time }}
-      
+    - uses: actions/checkout@v1
+    - run: |
+        echo $SUPER_SECRET      
