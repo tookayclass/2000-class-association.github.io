@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: |
-        echo $SUPER_SECRET      
+        echo ${GITHUB_WORKSPACE}
