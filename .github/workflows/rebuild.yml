@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
           with:
-            rev: master
+            ref: master
       - name: Environment info
         run: printenv
       - name: Empty commit and push
