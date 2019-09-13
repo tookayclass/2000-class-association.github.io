@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v1
-          with:
-            ref: master
+        with:
+          ref: master
       - name: Environment info
         run: printenv
       - name: Empty commit and push
