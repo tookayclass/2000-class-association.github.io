@@ -18,8 +18,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.email "github@users.noreply.github.com"
-          git config --global user.name "${GITHUB_ACTOR}"
+          git config committer.email "noreply@github.com"
+          git config committer.name "GitHub"
+          git config author.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git config author.name "${GITHUB_ACTOR}"
           git checkout -b master
           git commit -m '[ci skip] Empty commit to trigger Jekyll rebuild' --allow-empty && \
-          git push origin master:master
+          git -c http.extraheader="AUTHORIZATION: basic ${GITHUB_TOKEN}" push origin master:master
