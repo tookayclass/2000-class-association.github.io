@@ -24,4 +24,4 @@ jobs:
           git config author.name "${GITHUB_ACTOR}"
           git checkout -b master
           git commit -m '[ci skip] Empty commit to trigger Jekyll rebuild' --allow-empty && \
-          git -c http.extraheader="AUTHORIZATION: basic ${GITHUB_TOKEN}" push origin master:master
+          git -c http.extraheader="AUTHORIZATION: bearer ${GITHUB_TOKEN}" push origin master:master
