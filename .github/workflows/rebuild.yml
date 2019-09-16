@@ -1,7 +1,7 @@
 name: Rebuild site
 on:
   schedule:
-    - cron:  '6 2,20 * * *'  # At 0200hrs UTC every day
+    - cron:  '7 2,20 * * *'  # At 0200hrs UTC every day
 
 jobs:
   build:
