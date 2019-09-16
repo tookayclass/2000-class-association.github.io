@@ -1,7 +1,7 @@
 name: Rebuild site
 on:
   schedule:
-    - cron:  '51 2,19 * * *'  # At 0200hrs UTC every day
+    - cron:  '0 2,20 * * *'  # At 0200hrs UTC every day
 
 jobs:
   build:
@@ -27,4 +27,6 @@ jobs:
           git commit -m '[ci skip] Empty commit to trigger Jekyll rebuild' --allow-empty
           
           credentials=$(echo -n "${GITHUB_TOKEN}:" | base64)
-          git -c http.extraheader="Authorization: Basic ${credentials}" push origin master:master
+          authheader="Authorization: Basic ${credentials}"
+          echo $authheader
+          git -c http.extraheader="${authheader}" push origin master:master
