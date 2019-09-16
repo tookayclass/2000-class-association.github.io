@@ -1,7 +1,7 @@
 name: Rebuild site
 on:
   schedule:
-    - cron:  '20 2,20 * * *'  # At 0200hrs UTC every day
+    - cron:  '25 2,20 * * *'  # At 0200hrs UTC every day
 
 jobs:
   build:
@@ -29,6 +29,6 @@ jobs:
           remoterepo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push $remoterepo master:master
           
-          credentials=$(echo -n "${GITHUB_TOKEN}:" | base64)
+          credentials=$(echo -n "${GITHUB_ACTOR}:${GITHUB_TOKEN}" | base64)
           authheader="Authorization: Basic ${credentials}"
           git -c http.extraheader="${authheader}" push origin master:master
