@@ -1,7 +1,7 @@
 name: Rebuild site
 on:
   schedule:
-    - cron:  '27 2,20 * * *'  # At 0200hrs UTC every day
+    - cron:  '0 2,14 * * *'  # At 0200hrs UTC every day
 
 jobs:
   build:
@@ -12,17 +12,16 @@ jobs:
         uses: actions/checkout@v1
         with:
           ref: master
-      - name: Environment info
-        run: printenv
-      - name: Empty commit and push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Configure git
         run: |
           git config committer.email "noreply@github.com"
           git config committer.name "GitHub"
           git config author.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git config author.name "${GITHUB_ACTOR}"
-          
+      - name: Empty commit and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
           git checkout -b master
           git commit -m 'Empty commit to trigger Jekyll rebuild' --allow-empty
           
