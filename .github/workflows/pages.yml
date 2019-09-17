@@ -12,11 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Environment info
-      run: printenv
-    - name: Listing
       run: |
-        cd /home/runner/work
-        ls -al
+        whoami
+        printenv
     - name: Checkout repository
       uses: actions/checkout@v1
       with:
