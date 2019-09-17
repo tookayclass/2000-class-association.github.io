@@ -20,6 +20,6 @@ jobs:
     - name: Run Jekyll
       uses: docker://jekyll/jekyll:3.8.5
       env:
-        JEKYLL_UID: root
-        JEKYLL_GID: root
+        JEKYLL_UID: 0
+        JEKYLL_GID: 0
       
