@@ -18,4 +18,4 @@ jobs:
     - name: Environment info
       run: printenv
     - name: Run Jekyll
-      uses: faph/action-jekyll      
+      uses: faph/action-jekyll@v0.1
