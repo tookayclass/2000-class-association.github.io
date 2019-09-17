@@ -17,5 +17,9 @@ jobs:
         ref: master
     - name: Environment info
       run: printenv
+    - name: Listing
+      run: |
+        cd /github
+        ls -al
     - name: Run Jekyll
       uses: faph/action-jekyll@v0.1
