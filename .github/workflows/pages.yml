@@ -11,15 +11,15 @@ jobs:
     name: Build website
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v1
-      with:
-        ref: master
     - name: Environment info
       run: printenv
     - name: Listing
       run: |
-        cd /github
+        cd /home/runner/work
         ls -al
+    - name: Checkout repository
+      uses: actions/checkout@v1
+      with:
+        ref: master
     - name: Run Jekyll
       uses: faph/action-jekyll@v0.1
