@@ -18,4 +18,15 @@ jobs:
       with:
         ref: master
     - name: Run Jekyll
+      uses: ruby:2.3.4
+      args:
+      - bundle 
+      - install
+      - &&
+      - bundle 
+      - exec 
+      - jekyll 
+      - build
+      - --verbose
+    - name: Run Jekyll 2
       uses: faph/action-jekyll-2/build@master
