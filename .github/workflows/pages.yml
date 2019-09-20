@@ -14,6 +14,8 @@ jobs:
     - name: Environment info
       run: |
         whoami
+        echo "$(id -u username)"
+        echo "$(id -g username)"
         printenv
     - name: Checkout repository
       uses: actions/checkout@v1
@@ -24,7 +26,7 @@ jobs:
         /usr/bin/docker run \
         --rm \
         -e "DEBUG=true" \
-        --user "runner:docker" \
+        --user "$(id -u username):$(id -g username)" \
         --volume "/home/runner/work/2000-class-association.github.io/2000-class-association.github.io":"/srv/jekyll" \
         jekyll/jekyll:3.8.5 jekyll build --future --verbose
     - name: Run Jekyll
