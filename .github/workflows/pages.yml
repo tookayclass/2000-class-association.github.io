@@ -12,15 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Environment info
-      run: |
-        whoami
-        echo "$(id -u $(whoami))"
-        echo "$(id -g $(whoami))"
-        printenv
+      run: printenv
     - name: Checkout repository
       uses: actions/checkout@v1
       with:
         ref: master
     - name: Run Jekyll
-      uses: BryanSchuetz/jekyll-deploy-gh-pages/build@1.0
-
+      uses: faph/action-jekyll-2/build@master
