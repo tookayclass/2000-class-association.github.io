@@ -22,11 +22,11 @@ jobs:
       args:
       - bundle 
       - install
-      - &&
+      - "&&"
       - bundle 
       - exec 
       - jekyll 
       - build
-      - --verbose
+      - "--verbose"
     - name: Run Jekyll 2
       uses: faph/action-jekyll-2/build@master
