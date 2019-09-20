@@ -22,5 +22,5 @@ jobs:
       with:
         ref: master
     - name: Run Jekyll
-      uses: BryanSchuetz/jekyll-deploy-gh-pages/build@v1.0
+      uses: BryanSchuetz/jekyll-deploy-gh-pages/build@1.0
 
