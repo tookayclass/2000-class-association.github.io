@@ -21,15 +21,6 @@ jobs:
       uses: actions/checkout@v1
       with:
         ref: master
-    - name: Run Jekyll container manually
-      run: |
-        /usr/bin/docker run \
-        --rm \
-        -e "DEBUG=true" \
-        -e "JEKYLL_UID=$(id -u $(whoami))" \
-        -e "JEKYLL_GID=$(id -g $(whoami))" \
-        --user "$(id -u $(whoami)):$(id -g $(whoami))" \
-        --volume "/home/runner/work/2000-class-association.github.io/2000-class-association.github.io":"/srv/jekyll" \
-        jekyll/jekyll:3.8.5 jekyll build --future --verbose
     - name: Run Jekyll
-      uses: faph/action-jekyll@v0.1
+      uses: BryanSchuetz/jekyll-deploy-gh-pages/build@v1.0
+
