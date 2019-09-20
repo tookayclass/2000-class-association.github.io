@@ -24,8 +24,7 @@ jobs:
         /usr/bin/docker run \
         --rm \
         -e "DEBUG=true" \
-        -e "JEKYLL_UID=0" \
-        -e "JEKYLL_GID=0" \
+        --user "runner:docker" \
         --volume "/home/runner/work/2000-class-association.github.io/2000-class-association.github.io":"/srv/jekyll" \
         jekyll/jekyll:3.8.5 jekyll build --future --verbose
     - name: Run Jekyll
