@@ -18,7 +18,7 @@ jobs:
       with:
         ref: master
     - name: Run Jekyll
-      uses: ruby:2.3.4
+      uses: docker://ruby:2.3.4
       args:
       - bundle 
       - install
