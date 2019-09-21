@@ -19,3 +19,5 @@ jobs:
         ref: master
     - name: Run Jekyll
       uses: docker://faph/action-jekyll-2
+      with:
+        destination_dir: ../build
