@@ -35,6 +35,6 @@ jobs:
         ls -al
         git init
         git add .
-        #git commit --message "Publishing website" --verbose
+        git commit --message "Publishing website" --verbose
         popd
         
