@@ -19,3 +19,16 @@ jobs:
         ref: master
     - name: Run Jekyll
       uses: docker://faph/action-jekyll-2
+    - name: Configure git
+      run: |
+        git config committer.email "noreply@github.com"
+        git config committer.name "GitHub"
+        git config author.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git config author.name "${GITHUB_ACTOR}"
+    - name: Commit and push build dir
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        credentials=$(echo -n "${GITHUB_ACTOR}:${GITHUB_TOKEN}" | base64)
+        authheader="Authorization: Basic ${credentials}"
+        
