@@ -32,7 +32,6 @@ jobs:
         credentials=$(echo -n "${GITHUB_ACTOR}:${GITHUB_TOKEN}" | base64)
         authheader="Authorization: Basic ${credentials}"
         pushd _site
-        ls -al
         git init
         git add .
         git commit --message "Publishing website" --verbose
