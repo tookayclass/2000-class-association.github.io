@@ -18,7 +18,7 @@ jobs:
       with:
         ref: master
     - name: Run Jekyll
-      uses: docker://faph/action-jekyll-2
+      uses: faph/action-jekyll-2@master
     - name: Configure git
       run: |
         git config committer.email "noreply@github.com"
