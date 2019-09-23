@@ -37,6 +37,6 @@ jobs:
         git init
         git add .
         git commit --message "Publishing website" --verbose
-        git -c http.extraheader="${authheader}" --force push $remote master:$branch
+        git -c http.extraheader="${authheader}" push --force $remote master:$branch
         popd
         
