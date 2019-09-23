@@ -32,10 +32,11 @@ jobs:
         credentials=$(echo -n "${GITHUB_ACTOR}:${GITHUB_TOKEN}" | base64)
         authheader="Authorization: Basic ${credentials}"
         remote="https://github.com/${GITHUB_REPOSITORY}.git"
+        branch="gh-pages"
         pushd _site
         git init
         git add .
         git commit --message "Publishing website" --verbose
-        git -c http.extraheader="${authheader}" push $remote master:gh-pages
+        git --config http.extraheader="${authheader}" --force push $remote master:$branch
         popd
         
