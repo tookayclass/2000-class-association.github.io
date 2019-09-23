@@ -3,10 +3,8 @@ layout: page
 ---
 
 <dl>
-  <dt>Start date</dt>
-  <dd>{{ page.date | date: '%e %b %Y' }}</dd>
-  <dt>End date</dt>
-  <dd>{{ page.date_end | date: '%e %b %Y' }}</dd>
+  <dt>Dates</dt>
+  <dd>{% include daterange.html from=page.date to=page.date_end %}</dd>
   <dt>Venue</dt>
   <dd>{{ page.venue }}</dd>
 </dl>
