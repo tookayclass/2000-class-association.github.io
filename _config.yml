@@ -24,6 +24,7 @@ logo: /assets/img/logo-2000-class-association.png
 licence: https://creativecommons.org/licenses/by/4.0/
 lang: en_GB
 future: true  # Publish future dated news and events
+chart_key: Navionics_webapi_03675
 
 collections:
   events:

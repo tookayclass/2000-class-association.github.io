@@ -13,9 +13,10 @@ layout: page
 
 <div id="nautical-chart" class="mb-3"></div>
 
+{{ content }}
+
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-
 <link rel="stylesheet" href="https://webapiv2.navionics.com/dist/webapi/webapi.min.css" >
 <script type="text/javascript" src="https://webapiv2.navionics.com/dist/webapi/webapi.min.no-dep.js"></script>
 
@@ -23,7 +24,7 @@ layout: page
 var map = L.map('nautical-chart');
 map.setView([56.011017, -4.762519], 14);
 var overlay = new JNC.Leaflet.NavionicsOverlay({
-  navKey: 'Navionics_webapi_03675',
+  navKey: '{{ site.chart_key }}',
   chartType: JNC.NAVIONICS_CHARTS.NAUTICAL,
   isTransparent: false
 });
@@ -31,8 +32,3 @@ overlay.addTo(map);
 var marker = L.marker([56.011017, -4.762519]).addTo(map);
 marker.bindPopup("{{ page.venue }}").openPopup();
 </script>
-
-{{ content }}
-
-
-
