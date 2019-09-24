@@ -1,0 +1,6 @@
+language: minimal
+
+deploy:
+  provider: script
+  script: |
+    echo "Hello world"
