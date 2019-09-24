@@ -1,6 +1,8 @@
+{% assign email_url   = "mailto:" | append: site.email %}
+{% assign twitter_url = "https://twitter.com/" | append: site.twitter.username %}
 <h2 class="mb-3">Stay in touch</h2>
 <ol class="list-unstyled">
-  <li><i data-feather="mail"></i> <a href="mailto:{{ site.email }}">Email</a></li>
-  <li><i data-feather="facebook"></i> <a href="{{ site.facebook.publisher }}">Facebook</a></li>
-  <li><i data-feather="twitter"></i> <a href="https://twitter.com/{{ site.twitter.username }}">Twitter</a></li>
+  <li>{% include icon-link.html url=email_url icon="mail" text="Email" %}</li>
+  <li>{% include icon-link.html url=site.facebook.publisher icon="facebook" text="Facebook" %}</li>
+  <li>{% include icon-link.html url=twitter_url icon="twitter" text="Twitter" %}</li>
 </ol>

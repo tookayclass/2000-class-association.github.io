@@ -30,3 +30,13 @@ main {
   width: 100%;
   height: 300px;
 }
+
+.icon-link {
+  vertical-align: bottom;
+  a {
+    svg {
+      color: #212529;
+      vertical-align: top;
+    }
+  }
+}
