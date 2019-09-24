@@ -1,6 +1,8 @@
-language: minimal
-
 deploy:
-  provider: script
-  script: |
-    echo "Hello world"
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+  verbose: true
+  on:
+    branch: master
