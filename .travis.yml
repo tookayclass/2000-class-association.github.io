@@ -1,3 +1,6 @@
+install:
+- rake
+
 deploy:
   provider: pages
   skip_cleanup: true
