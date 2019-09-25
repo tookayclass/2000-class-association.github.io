@@ -11,4 +11,4 @@ git commit --allow-empty --verbose --message "Empty commit to trigger new Jekyll
 
 credentials=$(echo -n "${GITHUB_ACTOR}:${GITHUB_TOKEN}" | base64)
 authheader="Authorization: Basic ${credentials}"
-git -c http.extraheader="${authheader}" push --force origin master:gh-pages
+git -c http.extraheader="${authheader}" push origin master:master
