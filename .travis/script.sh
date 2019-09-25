@@ -2,10 +2,10 @@
 
 GITHUB_ACTOR="faph"
 
-git config --global committer.email "deploy@travis-ci.org"
-git config --global committer.name "Deployment Bot"
-git config --global author.email "${GITHUB_ACTOR}@users.noreply.github.com"
-git config --global author.name "${GITHUB_ACTOR}"
+git config committer.email "deploy@travis-ci.org"
+git config committer.name "Deployment Bot"
+git config author.email "${GITHUB_ACTOR}@users.noreply.github.com"
+git config author.name "${GITHUB_ACTOR}"
 
 git checkout master
 git commit --allow-empty --verbose --message "Empty commit to trigger new Jekyll build on GitHub"
