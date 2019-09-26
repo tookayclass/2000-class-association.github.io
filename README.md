@@ -21,11 +21,17 @@ visitors and there is no dynamic content.
   file.
 
 - Content can be edited through the [Forestry.io][forestry] service. This is a 
-  user-friendly Content Management System built for static websites. 
-  Alternatively, content could be directly edited from the GitHub repository.
+  user-friendly Content Management System built for static websites. The website
+  administrator will need to assign the relevant permissions in Forestry.io to 
+  edit this website. Alternatively, content could be directly edited from the 
+  GitHub repository.
 
 - In addition to HTML pages, the website generates an [RSS feed][rss]
   (`/feed.xml`) and an [iCalendar][ical] of upcoming events (`/events.ics`).
+
+- The `CNAME` file contains the domain name this website responds to. DNS 
+  settings must be configured as documented (see [Using a custom domain with 
+  GitHub Pages][domain]).
 
 ## Terms and conditions
 
@@ -45,5 +51,6 @@ The content of this website is released under the [Creative Commons Attribution
 [forestry]: https://forestry.io/ "Forestry.io"
 [rss]: https://wikipedia.org/wiki/RSS  "RSS Wikipedia page"
 [ical]: https://wikipedia.org/wiki/ICalendar "iCalendar Wikipedia page"
+[domain]: https://help.github.com/en/articles/using-a-custom-domain-with-github-pages "GitHub Pages documentation"
 [gpl]: https://www.gnu.org/licenses/gpl-3.0.en.html "GPL v3 licence"
 [cc]: https://creativecommons.org/licenses/by/4.0/ "CC BY 4.0 licence"
