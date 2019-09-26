@@ -4,8 +4,9 @@
   <ul class="list-unstyled">
     {% for attachment in page.attachments %}
       {% assign file_ext = attachment.path | split: "." | last | downcase %}
+      {% capture file_title %}{{ attachment.title }} ({{ file_ext }}){% endcapture %}
       <li>
-        <a href="{{ attachment.path | absolute_url }}" title="View or download the document">{{ attachment.title }} ({{ file_ext }})</a>
+        {% include icon-link.html url=attachment.path icon="file-text" text=file_title %}
       </li>
     {% endfor %}
   </ul>
