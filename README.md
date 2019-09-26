@@ -6,6 +6,7 @@ This website is build using the static website generator Jekyll. That means that
 all content is generated as static pages: all pages look the same for all
 visitors and there is no dynamic content.
 
+
 ## Technically
 
 - [GitHub Pages][ghp] is the service that runs [Jekyll][jekyll] to generate HTML
@@ -19,6 +20,11 @@ visitors and there is no dynamic content.
   
   Daily build status: 
   [![Build Status](https://travis-ci.com/2000-class-association/2000-class-association.github.io.svg?branch=master)](https://travis-ci.com/2000-class-association/2000-class-association.github.io)
+
+- Every time a change is made, a GitHub Actions workflow will run verifying that
+  all generated pages are valid HTML5. If this action fails, log messages should
+  be inspected and content or page templates updated as required for the 
+  validation test to pass.
 
 - General website configuration and meta data are included in the `_config.yml`
   file.
@@ -35,6 +41,14 @@ visitors and there is no dynamic content.
 - The `CNAME` file contains the domain name this website responds to. DNS 
   settings must be configured as documented (see [Using a custom domain with 
   GitHub Pages][domain]).
+
+- To test the website on your own (Windows 10) computer, install Docker, clone
+  the repository and run the script `run.ps1` in PowerShell. Then open a 
+  webbrowser and load the website using the URL `http://localhost:4000/`.
+
+- To build the website and verify that all pages are valid HTML5 run the script 
+  `validate.ps1`.
+
 
 ## Terms and conditions
 
