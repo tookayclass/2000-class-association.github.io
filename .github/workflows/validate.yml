@@ -21,4 +21,4 @@ jobs:
       uses: docker://validator/validator
       with:
         entrypoint: /vnu-runtime-image/bin/vnu
-        args: --verbose --skip-non-html --also-check-css _site
+        args: --verbose --skip-non-html _site
