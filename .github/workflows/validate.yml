@@ -1,0 +1,24 @@
+name: Validation
+on: 
+  push:
+    branches:    
+    - master 
+  
+jobs:
+  html:
+    name: HTML5 validation
+    runs-on: ubuntu-latest
+    steps:
+    - name: Environment info
+      run: printenv
+    - name: Checkout repository
+      uses: actions/checkout@v1
+      with:
+        ref: master
+    - name: Run Jekyll
+      uses: faph/action-jekyll-2@master
+    - name: HTML5 validation
+      uses: docker://validator/validator
+      with:
+        entrypoint: vnu-runtime-image/bin/vnu
+        args: ./_site/*.html
