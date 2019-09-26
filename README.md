@@ -13,19 +13,19 @@ visitors and there is no dynamic content.
   time a change is made, a new set of HTML pages is generated. The [Ruby][ruby]
   libraries required to build the website are defined in the `Gemfile` file.
 
-- The website is also rebuilt daily. This is done by the Travis CI service as 
-  configured in the `.travis.yml` file. The daily rebuild is required to update
-  pages containing time-dependant information such as upcoming events.
+- The website is also rebuilt daily. This is done by the [Travis CI][travis] 
+  service as configured in the `.travis.yml` file. The daily rebuild is required
+  to update pages containing time-dependant information such as upcoming events.
 
 - General website configuration and meta data are included in the `_config.yml`
   file.
 
-- Content can be edited through the Forestry.io service. This is a user-friendly
-  Content Management System built for static websites. Alternatively, content
-  could be directly edited from the GitHub repository.
+- Content can be edited through the [Forestry.io][forestry] service. This is a 
+  user-friendly Content Management System built for static websites. 
+  Alternatively, content could be directly edited from the GitHub repository.
 
-- In addition to HTML pages, the website generates an RSS feed (`/feed.xml`) and
-  an ICAL calendar of upcoming events (`/events.ics`).
+- In addition to HTML pages, the website generates an [RSS feed][rss]
+  (`/feed.xml`) and an [iCalendar][ical] of upcoming events (`/events.ics`).
 
 ## Terms and conditions
 
@@ -41,5 +41,9 @@ The content of this website is released under the [Creative Commons Attribution
 [jekyll]: https://jekyllrb.com/ "Jekyll static website generator"
 [markdown]: https://daringfireball.net/projects/markdown/ "Markdown markup language"
 [ruby]: https://www.ruby-lang.org/ "Ruby programming language"
+[travis]: https://travis-ci.com "Travis CI"
+[forestry]: https://forestry.io/ "Forestry.io"
+[rss]: https://wikipedia.org/wiki/RSS  "RSS Wikipedia page"
+[ical]: https://wikipedia.org/wiki/ICalendar "iCalendar Wikipedia page"
 [gpl]: https://www.gnu.org/licenses/gpl-3.0.en.html "GPL v3 licence"
 [cc]: https://creativecommons.org/licenses/by/4.0/ "CC BY 4.0 licence"
