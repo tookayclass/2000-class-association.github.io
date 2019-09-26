@@ -16,6 +16,7 @@ visitors and there is no dynamic content.
 - The website is also rebuilt daily. This is done by the [Travis CI][travis] 
   service as configured in the `.travis.yml` file. The daily rebuild is required
   to update pages containing time-dependant information such as upcoming events.
+  
   Daily build status: 
   ![Travis](https://api.travis-ci.com/2000-class-association/2000-class-association.github.io.svg?branch=master)
 
