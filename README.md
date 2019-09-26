@@ -18,7 +18,7 @@ visitors and there is no dynamic content.
   to update pages containing time-dependant information such as upcoming events.
   
   Daily build status: 
-  ![Travis](https://api.travis-ci.com/2000-class-association/2000-class-association.github.io.svg?branch=master)
+  [![Build Status](https://travis-ci.com/2000-class-association/2000-class-association.github.io.svg?branch=master)](https://travis-ci.com/2000-class-association/2000-class-association.github.io)
 
 - General website configuration and meta data are included in the `_config.yml`
   file.
