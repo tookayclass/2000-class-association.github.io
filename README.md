@@ -24,6 +24,9 @@ visitors and there is no dynamic content.
   Content Management System built for static websites. Alternatively, content
   could be directly edited from the GitHub repository.
 
+- In addition to HTML pages, the website generates an RSS feed (`/feed.xml`) and
+  an ICAL calendar of upcoming events (`/events.ics`).
+
 ## Terms and conditions
 
 All copyrights are owned by the 2000 Class Association.
