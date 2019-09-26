@@ -20,5 +20,5 @@ jobs:
     - name: HTML5 validation
       uses: docker://validator/validator
       with:
-        entrypoint: vnu-runtime-image/bin/vnu
+        entrypoint: /vnu-runtime-image/bin/vnu
         args: ./_site/*.html
