@@ -13,7 +13,7 @@ jobs:
         image: docker://jekyll/jekyll:3.8.5
         volumes:
         - $GITHUB_WORKSPACE:/srv/jekyll
-        options: jekyll serve
+        options: "--entrypoint '/usr/jekyll/bin/entrypoint jekyll serve'"
     steps:
     - name: Environment info
       run: printenv
