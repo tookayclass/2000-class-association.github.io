@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./.travis/ssh.sh
+
 git checkout master
 git commit --allow-empty --verbose --message "Empty commit to trigger new Jekyll build on GitHub"
 
