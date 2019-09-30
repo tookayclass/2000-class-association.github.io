@@ -1,10 +1,12 @@
 #!/bin/bash
 
+set -e
 source ./.travis/ssh.sh
+
+add_key $SSH_PRIVATE_KEY
 
 git checkout master
 git commit --allow-empty --verbose --message "Empty commit to trigger new Jekyll build on GitHub"
 
-credentials=$(echo -n "travis:${GITHUB_TOKEN}" | base64)
-authheader="Authorization: Basic ${credentials}"
-git -c http.extraheader="${authheader}" push origin master:master
+repo="ssh://git@github.com:${TRAVIS_REPO_SLUG}.git"
+git push $repo master:master
