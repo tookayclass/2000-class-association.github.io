@@ -1,9 +1,8 @@
 #!/bin/bash
 
-set -e
-source ./.travis/ssh.sh
+set -ev
 
-add_key $SSH_PRIVATE_KEY
+git config core.sshCommand "ssh -i ./.travis/id_rsa.pem"
 
 git checkout master
 git commit --allow-empty --verbose --message "Empty commit to trigger new Jekyll build on GitHub"
