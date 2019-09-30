@@ -12,6 +12,7 @@ add_key() {
   chmod --recursive u=r,go= $destination;
 
   cat $config;
-  (echo "Host github.com"; echo "    IdentityFile ${destination}") > $config;
+  sed "1 s/^/  IdentityFile ${destination}\n/" file1
+  sed "1 s/^/Host github.com\n/" file1
   cat $config;
 }
