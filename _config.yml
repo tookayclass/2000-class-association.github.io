@@ -32,6 +32,8 @@ collections:
   sponsors:
     output: false
     sort_by: order
+  venues:
+    output: false
 
 defaults:
   - scope:
