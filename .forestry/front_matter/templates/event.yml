@@ -51,5 +51,5 @@ fields:
     labelField: title
   label: Attachments
 pages:
-- _events/national-championships-2020.md
 - _events/inland-championships-2019.md
+- _events/national-championships-2020.md
