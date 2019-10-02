@@ -16,6 +16,11 @@ sections:
   match: "**/*"
   templates:
   - event
+- type: directory
+  path: _venues
+  label: Venues
+  create: documents
+  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
