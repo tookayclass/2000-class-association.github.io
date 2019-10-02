@@ -18,9 +18,18 @@ fields:
   config:
     date_format: DD/MM/YYYY
     export_format: YYYY-MM-DD
-- type: text
-  name: venue
-  label: venue
+- name: venue
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: venues
+      file: 
+      path: 
+  label: Venue
 - name: attachments
   type: field_group_list
   fields:
