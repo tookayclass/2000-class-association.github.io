@@ -10,6 +10,5 @@ lon: 0.006276
 email: ''
 website: http://wwsc.org.uk/web/
 telephone: ''
-published: false
 
 ---
