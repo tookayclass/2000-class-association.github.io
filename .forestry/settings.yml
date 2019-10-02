@@ -21,6 +21,8 @@ sections:
   label: Venues
   create: documents
   match: "**/*"
+  templates:
+  - venue
 - type: jekyll-pages
   label: Pages
   create: all
