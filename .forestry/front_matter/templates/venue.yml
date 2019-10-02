@@ -63,4 +63,5 @@ fields:
   name: telephone
   label: Telephone
 pages:
+- _venues/brixham-yacht-club.md
 - _venues/weir-wood-sailing-club.md
