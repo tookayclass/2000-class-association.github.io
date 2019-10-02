@@ -4,34 +4,41 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Name
+  config:
+    required: true
 - type: text
   name: address
-  label: address
+  label: Address
 - type: text
   name: place
-  label: place
+  label: Place
 - type: text
   name: postcode
-  label: postcode
+  label: Postcode
 - type: text
   name: county
-  label: county
+  label: County
 - type: text
   name: country
-  label: country
+  label: Country
 - type: number
   name: lat
-  label: lat
+  label: Latitude
+  description: Where the slipway crosses the (high) water line
 - type: number
   name: lon
-  label: lon
+  label: Longitude
+  description: Where the slipway crosses the (high) water line
 - type: text
   name: email
-  label: email
+  label: Email address
 - type: text
   name: website
-  label: website
+  label: Website
+  description: Including https://...
+  config:
+    required: true
 - type: text
   name: telephone
-  label: telephone
+  label: Telephone
