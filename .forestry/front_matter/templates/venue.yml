@@ -30,6 +30,7 @@ fields:
     - Scotland
     - Wales
     - Northern Ireland
+    - Outside UK
     source:
       type: simple
       section: 
