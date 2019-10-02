@@ -20,9 +20,23 @@ fields:
 - type: text
   name: county
   label: County
-- type: text
-  name: country
+- name: country
+  type: select
+  default: England
+  config:
+    required: true
+    options:
+    - England
+    - Scotland
+    - Wales
+    - Northern Ireland
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Country
+  description: "(UK constituent) country"
 - type: number
   name: lat
   label: Latitude
