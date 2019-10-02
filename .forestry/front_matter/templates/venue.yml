@@ -42,10 +42,14 @@ fields:
   name: lat
   label: Latitude
   description: Where the slipway crosses the (high) water line
+  config:
+    step: '0.000001'
 - type: number
   name: lon
   label: Longitude
   description: Where the slipway crosses the (high) water line
+  config:
+    step: '0.000001'
 - type: text
   name: email
   label: Email address
