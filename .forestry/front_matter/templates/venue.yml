@@ -1,0 +1,37 @@
+---
+label: Venue
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: address
+  label: address
+- type: text
+  name: place
+  label: place
+- type: text
+  name: postcode
+  label: postcode
+- type: text
+  name: county
+  label: county
+- type: text
+  name: country
+  label: country
+- type: number
+  name: lat
+  label: lat
+- type: number
+  name: lon
+  label: lon
+- type: text
+  name: email
+  label: email
+- type: text
+  name: website
+  label: website
+- type: text
+  name: telephone
+  label: telephone
