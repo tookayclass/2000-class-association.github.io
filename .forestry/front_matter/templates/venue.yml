@@ -58,3 +58,5 @@ fields:
 - type: text
   name: telephone
   label: Telephone
+pages:
+- _venues/weir-wood-sailing-club.md
