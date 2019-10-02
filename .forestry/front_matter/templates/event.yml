@@ -5,20 +5,24 @@ display_field: title
 fields:
 - type: text
   name: title
-  label: title
+  label: Name or title
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Start date
   config:
     date_format: DD/MM/YYYY
     export_format: YYYY-MM-DD
     required: true
 - type: datetime
   name: date_end
-  label: date_end
+  label: End date
   config:
     date_format: DD/MM/YYYY
     export_format: YYYY-MM-DD
+    required: true
+  description: For single day events, enter same date as start date
 - name: venue
   type: select
   default: []
