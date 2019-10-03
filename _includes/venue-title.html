@@ -1,0 +1,4 @@
+{%- assign venues = site.venues | where:"path", include.path -%}
+{%- for venue in venues -%}
+  {{ venue.title }}
+{%- endfor -%}
