@@ -1,4 +1,10 @@
 {%- assign venues = site.venues | where:"path", include.path -%}
-{%- for venue in venues -%}
-  {{ venue.title }}
+{%- for v in venues -%}
+   {%- assign venue = v -%}
 {%- endfor -%}
+{%- assign addlink = include.link | default: false -%}
+{%- if addlink and venue.website -%}
+  {%- include external-link.html url=venue.website text=venue.title -%}
+{%- else -%}
+  {{- venue.title -}}
+{%- endif -%}

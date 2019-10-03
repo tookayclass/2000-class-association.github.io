@@ -40,3 +40,14 @@ main {
     }
   }
 }
+
+.external-link {
+  vertical-align: bottom;
+  a {
+    svg {
+      vertical-align: top;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
