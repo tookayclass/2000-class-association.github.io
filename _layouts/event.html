@@ -9,24 +9,7 @@ layout: page
   <dd>{% include venue-title.html path=page.venue link=true %}</dd>
 </dl>
 
-<div id="nautical-chart" class="mb-3"></div>
+{% include venue-chart.html path=page.venue %}
 
 {{ content }}
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
-<script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-<link rel="stylesheet" href="https://webapiv2.navionics.com/dist/webapi/webapi.min.css" >
-<script src="https://webapiv2.navionics.com/dist/webapi/webapi.min.no-dep.js"></script>
-
-<script>
-var map = L.map('nautical-chart');
-map.setView([56.011017, -4.762519], 14);
-var overlay = new JNC.Leaflet.NavionicsOverlay({
-  navKey: '{{ site.chart_key }}',
-  chartType: JNC.NAVIONICS_CHARTS.NAUTICAL,
-  isTransparent: false
-});
-overlay.addTo(map);
-var marker = L.marker([56.011017, -4.762519]).addTo(map);
-marker.bindPopup("{{ page.venue }}").openPopup();
-</script>
