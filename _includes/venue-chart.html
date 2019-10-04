@@ -1,7 +1,4 @@
-{%- assign venues = site.venues | where:"path", include.path -%}
-{%- for v in venues -%}
-   {%- assign venue = v -%}
-{%- endfor -%}
+{%- assign venue = site.venues | where:"path", include.path | first -%}
 {%- if venue.lat and venue.lon -%}
 
 <div id="nautical-chart" class="mb-3"></div>

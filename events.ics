@@ -2,6 +2,7 @@
 layout: calendar
 ---
 {%- for event in site.events -%}
+{%- assign venue = site.venues | where:"path", event.venue | first -%}
 BEGIN:VEVENT
 DTSTAMP:{{ site.time | date: "%Y%m%dT%H%M%SZ" }}
 UID:{{ event.url | absolute_url }}
@@ -10,6 +11,7 @@ DTEND;VALUE=DATE:{{ event.date_end | date: "%Y%m%d" }}
 SUMMARY:{{ event.title }}
 URL:{{ event.url | absolute_url }}
 DESCRIPTION:{{ event.content | strip_html | strip | truncate: 60 | strip }}
-LOCATION:{{ event.venue }}
+{% if venue.title %}LOCATION:{{ venue.title }}{% endif %}
+{% if venue.lat and venue.lon %}GEO:{{ venue.lat }};{{ venue.lon }}{% endif %}
 END:VEVENT
 {% endfor -%}
