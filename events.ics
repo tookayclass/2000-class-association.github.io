@@ -11,7 +11,10 @@ DTEND;VALUE=DATE:{{ event.date_end | date: "%Y%m%d" }}
 SUMMARY:{{ event.title }}
 URL:{{ event.url | absolute_url }}
 DESCRIPTION:{{ event.content | strip_html | strip | truncate: 60 | strip }}
-{% if venue.title %}LOCATION:{{ venue.title }}{% endif %}
-{% if venue.lat and venue.lon %}GEO:{{ venue.lat }};{{ venue.lon }}{% endif %}
+{%- if venue.title %}
+LOCATION:{{ venue.title }}
+{% endif -%}
+{%- if venue.lat and venue.lon -%}GEO:{{ venue.lat }};{{ venue.lon }}
+{%- endif %}
 END:VEVENT
 {% endfor -%}
