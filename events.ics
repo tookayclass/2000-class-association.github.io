@@ -12,7 +12,7 @@ SUMMARY:{{ event.title }}
 URL:{{ event.url | absolute_url }}
 DESCRIPTION:{{ event.content | strip_html | strip | replace: ",", "\," | truncate: 60 | strip }}
 {%- if venue.title %}
-LOCATION:{{ venue.title }}
+LOCATION:{{ venue.title }}{% if venue.county %}, {{ venue.county | strip }}{% endif %}{% if venue.postcode %}, {{ venue.postcode | strip }}{% endif %}
 {% endif -%}
 {%- if venue.lat and venue.lon -%}GEO:{{ venue.lat }};{{ venue.lon }}
 {%- endif %}
