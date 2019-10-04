@@ -10,7 +10,7 @@ DTSTART;VALUE=DATE:{{ event.date | date: "%Y%m%d" }}
 DTEND;VALUE=DATE:{{ event.date_end | date: "%Y%m%d" }}
 SUMMARY:{{ event.title }}
 URL:{{ event.url | absolute_url }}
-DESCRIPTION:{{ event.content | strip_html | strip | truncate: 60 | strip }}
+DESCRIPTION:{{ event.content | strip_html | strip | replace: ",", "\," | truncate: 60 | strip }}
 {%- if venue.title %}
 LOCATION:{{ venue.title }}
 {% endif -%}
