@@ -50,6 +50,18 @@ visitors and there is no dynamic content.
   `validate.ps1`.
 
 
+## DNS settings
+
+The 2000 Class Association owns the following domains:
+
+| Domain                    | Purpose         | Registrar      | DNS hosting |
+| ------------------------- | --------------- | -------------- | ----------- |
+| `2000class.org`           | Primary website | Purely Domains | Namecheap   |
+| `2000class.org.uk`        | UK alias        | Namecheap      | Namecheap   |
+| `laser2000.org.uk`        | Historic        | Namecheap      | Namecheap   |
+| `festivalofsailing.co.uk` | Event           | Namecheap      | Namecheap   |
+
+
 ## Terms and conditions
 
 All copyrights are owned by the 2000 Class Association.
