@@ -27,3 +27,7 @@ jobs:
       with:
         entrypoint: /vnu-runtime-image/bin/vnu
         args: --verbose --css _site/assets/css/styles.css
+    - name: iCalendar validation
+      uses: docker://faph/icalendar-validator:1.1
+      with:
+        args: --verbose _site/events.ics 
