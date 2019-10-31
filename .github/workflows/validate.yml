@@ -8,11 +8,6 @@ jobs:
   validation:
     name: HTML5 validation
     runs-on: ubuntu-latest
-    services:
-      jekyll:
-        image: docker://jekyll/jekyll:3.8.5
-        volumes:
-        - $GITHUB_WORKSPACE:/srv/jekyll
     steps:
     - name: Environment info
       run: printenv
