@@ -14,7 +14,7 @@ jobs:
       with:
         ref: master
     - name: Run Jekyll
-      uses: docker://faph/action-jekyll-2:1.5
+      uses: docker://faph/action-jekyll:1.5
     - name: HTML5 validation
       uses: docker://validator/validator@sha256:7f4f336d3df5907751848b53aceb347d160384b9840a2d87b5b87b3836557b2b
       with:
