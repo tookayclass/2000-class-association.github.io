@@ -38,6 +38,6 @@ fields:
   label: Order
   description: Display order
 pages:
-- _sponsors/noble-marine.md
 - _sponsors/hyde-sails.md
+- _sponsors/noble-marine.md
 - _sponsors/rs-sailing.md
