@@ -1,8 +1,8 @@
 ---
 venue: ''
 title: 2000 Class Association - Lockdown Zoom Quiz
-date: 
-date_end: 
+date: 2020-04-17
+date_end: 2020-04-17
 attachments: []
 author: Helen Phillips & Simon Horsfield
 
