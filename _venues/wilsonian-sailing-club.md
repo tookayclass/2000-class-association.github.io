@@ -10,6 +10,5 @@ lon: 0.54635
 email: info@wilsoniansc.org.uk
 website: https://www.wilsoniansc.org.uk/index.html
 telephone: 01634 250318
-published: false
 
 ---
