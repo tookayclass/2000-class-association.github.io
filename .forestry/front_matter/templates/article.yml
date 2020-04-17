@@ -15,3 +15,5 @@ fields:
     content)
   config:
     required: true
+pages:
+- _posts/2000-class-training-has-been-postponed-until-july-2020.md
