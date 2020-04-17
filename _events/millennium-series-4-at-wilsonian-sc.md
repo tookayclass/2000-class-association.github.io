@@ -17,3 +17,5 @@ Kent
 ME3 9HF
 
 Kent based estuary club with keen 2000 sailors. Expect a variety of race types during the weekend.
+
+[https://www.wilsoniansc.org.uk/](https://www.wilsoniansc.org.uk/ "https://www.wilsoniansc.org.uk/")
