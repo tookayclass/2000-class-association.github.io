@@ -18,4 +18,4 @@ Friday 8th May
   
 Limited to 20 Zoom participants and only Class Association members.   
   
-To enter email Zoom Master Helen [accounts@2000class.org]()
+To enter email Zoom Master Helen [accounts@2000class.org](Lockdown Quiz Two !     Staunton Harold is missing us on 9-10 May so instead join your 2000 friends on Zoom for the  Staunton Harold SC Replacement Service :: Lockdown Quiz Two !  Friday 8th May  7.00pm for a 7.30pm start  25 questions, so make sure you have nibbles and drinks ready for a good 2 hours..  Limited to 20 Zoom participants and only Class Association members.   To enter email Zoom Master Helen accounts@2000class.org)
