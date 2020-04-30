@@ -10,7 +10,7 @@ attachments:
 ---
 ![](/uploads/2020/04/30/Screenshot 2020-04-30 at 15.46.28.png)
 
-**MS4 - 27-28th Jun 20 - Itchenor SC (2 Day)**
+**MS5 - 27-28th  Jun 20  - Itchenor SC (2 Day)**
 
 **_Welcome to Itchenor Sailing Club, a lively and friendly sailing and racing club._**
 
