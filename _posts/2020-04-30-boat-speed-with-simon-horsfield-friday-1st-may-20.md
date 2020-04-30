@@ -3,7 +3,9 @@ title: Boat Speed with Simon Horsfield - Friday 1st May 20
 author: Kev O'Brien
 
 ---
-![](/uploads/2020/04/30/Screenshot 2020-04-30 at 16.19.24.png)  
+![](/uploads/2020/04/30/Screenshot 2020-04-30 at 16.19.24.png)
+
+  
 ![](/uploads/2020/04/30/Screenshot 2020-04-30 at 16.26.21.png)
 
 **2000 Boat Speed 'Zoom' Online Training Session** with National Champion [Simon Horsfield](https://simonhorsfieldcoaching.co.uk/).
