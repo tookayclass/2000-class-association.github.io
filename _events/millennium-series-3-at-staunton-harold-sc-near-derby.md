@@ -3,7 +3,9 @@ venue: _venues/staunton-harold-sailing-club.md
 title: Millennium Series 3 at Staunton Harold SC near Derby
 date: 2020-05-09
 date_end: 2020-05-09
-attachments: []
+attachments:
+- path: "/uploads/2020/04/30/Staunton Harold Open 9th May 2020.pdf"
+  title: MS 3 - STa
 
 ---
 ![](/uploads/2020/04/19/Screenshot 2020-04-19 at 15.03.31.png)
