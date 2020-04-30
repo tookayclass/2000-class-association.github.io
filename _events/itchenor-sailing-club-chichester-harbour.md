@@ -5,7 +5,7 @@ date: 2020-06-27
 date_end: 2020-06-28
 attachments:
 - path: "/uploads/2020/04/30/RS 2000 NOR 2020 Itchenor.pdf"
-  title: MS4 27-28 Jun 20 - Itchenor SC (2 Day)
+  title: MS5 27-28 Jun 20 - Itchenor SC (2 Day)
 
 ---
 ![](/uploads/2020/04/30/Screenshot 2020-04-30 at 15.46.28.png)
