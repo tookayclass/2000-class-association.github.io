@@ -16,4 +16,5 @@ fields:
   config:
     required: true
 pages:
+- _posts/2000-class-association-lockdown-quiz-two.md
 - _posts/boat-speed-with-simon-horsfield-friday-1st-may-20.md
