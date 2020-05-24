@@ -1,6 +1,6 @@
 ---
 venue: _venues/wilsonian-sailing-club.md
-title: Millennium Series 4  - Wilsonian SC
+title: CANCELLED DUE TO CV19 - Millennium Series 4  - Wilsonian SC
 date: 2020-06-06
 date_end: 2020-06-07
 attachments: []
