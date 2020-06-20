@@ -1,5 +1,5 @@
 ---
-title: National Championships 2020 15 - 21 August 2020 - Brixham YC
+title: National Championships 2020 16 - 21 August 2020 - Brixham YC
 date: 2020-08-16
 date_end: 2020-08-20
 venue: _venues/brixham-yacht-club.md
