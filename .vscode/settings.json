@@ -1,3 +1,6 @@
 {
-    "vscode-simple-auto-reload.delay": 3000
+    "vscode-simple-auto-reload.delay": 3000,
+    "files.associations": {
+        "*.html": "jekyll"
+    },
 }
