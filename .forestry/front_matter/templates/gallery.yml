@@ -21,6 +21,13 @@ fields:
   description: The date the image was taken (images on the gallery are sorted in reverse
     order using this date)
   default: now
+- name: caption
+  type: text
+  config:
+    required: true
+  label: Caption
+  description: The caption for the image. <br><em>Also used for alternate text for
+    accessibility devices.</em>
 - name: extendedCaption
   type: text
   config:
@@ -33,10 +40,3 @@ fields:
     required: false
   label: Citation
   description: The creator/owner of the image
-- name: caption
-  type: text
-  config:
-    required: true
-  label: Caption
-  description: The caption for the image. <br><em>Also used for alternate text for
-    accessibility devices.</em>
