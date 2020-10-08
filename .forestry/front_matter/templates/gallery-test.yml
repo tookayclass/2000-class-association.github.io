@@ -1,6 +1,7 @@
 ---
-label: Gallery Test
+label: Gallery
 hide_body: true
+display_field: caption
 fields:
 - name: imageFile
   type: file
