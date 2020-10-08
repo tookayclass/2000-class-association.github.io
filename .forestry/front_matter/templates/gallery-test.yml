@@ -2,25 +2,12 @@
 label: Gallery Test
 hide_body: true
 fields:
-- name: images
-  type: field_group
-  config: {}
-  fields:
-  - name: imageFile
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-    description: The image itself
-  - name: caption
-    type: text
-    config:
-      required: true
-    label: Caption
-    description: The Caption, also used as the alternate image text for screen readers.<br>Should
-      be clear &amp; concise description of what is occurring in the image.
-  label: Images
-  description: The images that will be displayed in the gallery and their info
+- name: imageFile
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  description: The image itself
 - name: date
   type: datetime
   label: Date
@@ -45,3 +32,10 @@ fields:
     required: false
   label: Citation
   description: The creator/owner of the image
+- name: caption
+  type: text
+  config:
+    required: true
+  label: Caption
+  description: The caption for the image. <br><em>Also used for alternate text for
+    accessibility devices.</em>
