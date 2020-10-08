@@ -17,6 +17,13 @@ sections:
   templates:
   - event
 - type: directory
+  path: _gallery
+  label: Gallery
+  create: documents
+  match: "**/*"
+  templates:
+  - gallery
+- type: directory
   path: _venues
   label: Venues
   create: documents
