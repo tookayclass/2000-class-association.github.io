@@ -6,7 +6,7 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: image
+  - name: imageFile
     type: file
     config:
       maxSize: 64
@@ -15,8 +15,33 @@ fields:
   - name: caption
     type: text
     config:
-      required: false
+      required: true
     label: Caption
-    description: The Caption
+    description: The Caption, also used as the alternate image text for screen readers.<br>Should
+      be clear &amp; concise description of what is occurring in the image.
   label: Images
   description: The images that will be displayed in the gallery and their info
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+  description: The date the image was taken (images on the gallery are sorted in reverse
+    order using this date)
+  default: now
+- name: extendedCaption
+  type: text
+  config:
+    required: false
+  label: Extended Caption
+  description: The extended caption for the image
+- name: citation
+  type: text
+  config:
+    required: false
+  label: Citation
+  description: The creator/owner of the image
