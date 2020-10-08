@@ -1,0 +1,18 @@
+#gallery {
+    display: grid;
+    padding: 2%;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 2%;
+}
+#gallery img {
+    max-width: 100%;
+}
+#gallery .caption {
+    display: grid;
+    grid-template-columns: auto fit-content(30%);
+}
+#gallery .citation {
+    color: #686868;
+    font-size: 0.8em;
+    text-align: right;
+}

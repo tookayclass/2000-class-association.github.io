@@ -1,0 +1,20 @@
+---
+layout: base
+title: Gallery
+---
+<main>
+  <div id="gallery">
+    {% for image in site.gallery %}
+        <div class="image">
+          <img src="{{ image.imageFile }}" alt="image.caption">
+          <div class="caption">
+            <p>{{ image.caption }}</p>
+            <p class="citation">&#169;	{{ image.citation }}</p>
+          </div>
+          {{ image.extendedCaption | markdownify }}
+          
+        </div>
+    {% endfor %}
+  </div>
+  <hr/>
+</main>

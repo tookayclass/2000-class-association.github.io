@@ -34,6 +34,7 @@ collections:
     sort_by: order
   venues:
     output: false
+  gallery:
 
 defaults:
   - scope:
