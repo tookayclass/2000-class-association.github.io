@@ -3,4 +3,14 @@
     "files.associations": {
         "*.html": "jekyll"
     },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "variable.parameter.liquid,support.class.liquid,punctuation.output.liquid",
+                "settings": {
+                    "foreground": "#D4D4D4"
+                }
+            }
+        ]
+    }
 }
