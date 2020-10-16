@@ -2,19 +2,37 @@
 layout: base
 title: Gallery
 ---
+{%- comment -%} Using https://github.com/sachinchoolur/lightgallery.js for the gallery box {%- endcomment -%}
+
 <main>
+  <script src="assets/js/lightgallery.min.js"></script>
+  <script src="assets/js/lg-pager.min.js"></script>
+  <script src="assets/js/lg-share.min.js"></script>
+  <script src="assets/js/lg-thumbnail.min.js"></script>
+
   <div id="gallery">
+    {%- comment -%} Loop through every image in the collection {%- endcomment -%}
     {% for image in site.gallery %}
-        <div class="image">
-          <img src="{{ image.imageFile }}" alt="image.caption">
+        {%- comment -%} Create the image div, the extra values are used by the gallery popup {%- endcomment -%}
+        <div  class="image"  
+              data-src="{{ image.imageFile }}" 
+              data-sub-html="<div class='lightgalleryCaptions'> <p class='strongCaption'>{{ image.caption }}</p><p>{{ image.extendedCaption }}</p></div>"
+              >
+          <img src="{{ image.imageFile }}" data-src="{{ image.imageFile }}" alt="image.caption">
+          {%- comment -%} Include the caption for the non gallery view {%- endcomment -%}
           <div class="caption">
             <p>{{ image.caption }}</p>
             <p class="citation">&#169;	{{ image.citation }}</p>
           </div>
-          {{ image.extendedCaption | markdownify }}
-          
         </div>
     {% endfor %}
   </div>
+
+  <script> 
+    lightGallery(document.getElementById('gallery'), {
+      selector: '.image',
+      thumbnail: true
+    });
+  </script>
   <hr/>
 </main>

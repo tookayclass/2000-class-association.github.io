@@ -6,6 +6,7 @@
 }
 #gallery img {
     max-width: 100%;
+    cursor: pointer;
 }
 #gallery .caption {
     display: grid;
@@ -15,4 +16,7 @@
     color: #686868;
     font-size: 0.8em;
     text-align: right;
+}
+.strongCaption {
+    font-weight: 600;
 }
