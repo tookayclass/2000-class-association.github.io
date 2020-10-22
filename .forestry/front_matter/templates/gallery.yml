@@ -31,8 +31,8 @@ fields:
       time_format: 
       display_utc: false
       export_format: YYYY-MM-DD
-    description: The date the image was taken (images on the gallery are sorted in reverse
-      order using this date)
+    description: The date the image was taken (images on the gallery are sorted in
+      reverse order using this date)
     default: now
   - name: caption
     type: text
@@ -59,3 +59,5 @@ fields:
     labelField: 
   label: Repeatable Test
   description: Repeatable field group test
+pages:
+- _gallery/test-gallery-name.md
