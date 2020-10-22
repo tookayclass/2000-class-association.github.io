@@ -1,4 +1,18 @@
 ---
 label: Test
 hide_body: true
-fields: []
+fields:
+- name: repeatable_test
+  type: field_group_list
+  fields:
+  - name: just_to_confirm_appearance
+    type: text
+    config:
+      required: false
+    label: Just to confirm appearance
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Repeatable Test
+  description: Repeatable field group test
