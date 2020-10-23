@@ -3,12 +3,11 @@ label: Gallery
 hide_body: true
 display_field: caption
 fields:
-- name: imageFile
-  type: file
-  config:
-    maxSize: 64
-  label: Image
-  description: The image itself
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images Upload
+  description: The images to be displayed as part of the gallery
 - name: date
   type: datetime
   label: Date
@@ -21,22 +20,15 @@ fields:
   description: The date the image was taken (images on the gallery are sorted in reverse
     order using this date)
   default: now
-- name: caption
+- name: title
   type: text
   config:
     required: true
-  label: Caption
-  description: The caption for the image. <br><em>Also used for alternate text for
-    accessibility devices.</em>
-- name: extendedCaption
+  label: Gallery Title
+  description: The gallery title for the gallery
+- name: description
   type: text
   config:
     required: false
-  label: Extended Caption
+  label: Gallery Description
   description: The extended caption for the image
-- name: citation
-  type: text
-  config:
-    required: false
-  label: Citation
-  description: The creator/owner of the image
