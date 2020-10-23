@@ -35,6 +35,7 @@ collections:
   venues:
     output: false
   gallery:
+    output: true
 
 defaults:
   - scope:
@@ -51,6 +52,11 @@ defaults:
       path: ""
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "gallery"
+    values:
+      layout: "gallery"
 
 plugins:
   - jekyll-sitemap
