@@ -34,3 +34,4 @@ fields:
   description: The extended caption for the image
 pages:
 - _gallery/test-gallery.md
+- _gallery/the-title-of-the-gallery.md
