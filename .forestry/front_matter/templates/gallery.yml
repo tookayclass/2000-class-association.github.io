@@ -32,3 +32,5 @@ fields:
     required: false
   label: Gallery Description
   description: The extended caption for the image
+pages:
+- _gallery/test-gallery.md
