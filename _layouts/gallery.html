@@ -1,0 +1,17 @@
+---
+layout: base
+title: Gallery
+---
+{%- comment -%} Using https://github.com/sachinchoolur/lightgallery.js for the gallery box {%- endcomment -%}
+
+<main>
+  <script src="/assets/js/lightgallery.min.js"></script>
+  <script src="/assets/js/lg-pager.min.js"></script>
+  <script src="/assets/js/lg-share.min.js"></script>
+  <script src="/assets/js/lg-thumbnail.min.js"></script>
+
+  {% include gallery.html gallery=page %}
+
+  
+  <hr/>
+</main>

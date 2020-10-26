@@ -1,0 +1,40 @@
+{% assign gallery = include.gallery %}
+{%- comment -%} Create elementId for use in script targetting {%- endcomment -%}
+{% assign elementId = gallery.title | strip | remove: " " %}
+
+<div class="gallerycontainer">
+    {%- comment -%} If we have been asked to include the URL to the page for this gallery {%- endcomment -%}
+    {% if include.url %}
+    
+        <a href="{{ gallery.url }}"><h1 class='title'>{{ gallery.title }}</h1></a>
+    
+    {% else %}
+    
+        <h1>{{ gallery.title }}</h1> <a href="/gallery.html"><p class='backlink'>Back to gallery homepage</p></a>
+    
+    {% endif %}
+    
+    <h6 class="gallerydate">{{ gallery.date | date: "%A, %B %e, %Y" }}</h6>
+    <p class="description">{{ gallery.description }}</p>
+    
+    
+    <div class="gallery" id="{{ elementId }}">
+        {%- comment -%} Loop through every image in the collection {%- endcomment -%}
+          
+        {% for image in include.gallery.images%}
+            {%- comment -%} Create the image div, the extra values are used by the gallery popup {%- endcomment -%}
+            <div  class="image"  
+                  data-src="{{ image }}">
+              <img src="{{ image }}" data-src="{{ image }}">
+              
+            </div>
+        {% endfor %}
+    </div>
+    {%- comment -%} The script that creates the javascript gallery effect {%- endcomment -%}
+    <script> 
+    lightGallery(document.getElementById('{{ elementId }}'), {
+        selector: '.image',
+        thumbnail: true
+    });
+    </script>
+</div>

@@ -1,0 +1,37 @@
+---
+label: Gallery
+hide_body: true
+display_field: caption
+fields:
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images Upload
+  description: The images to be displayed as part of the gallery
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+  description: The date the image was taken (images on the gallery are sorted in reverse
+    order using this date)
+  default: now
+- name: title
+  type: text
+  config:
+    required: true
+  label: Gallery Title
+  description: The gallery title for the gallery
+- name: description
+  type: text
+  config:
+    required: false
+  label: Gallery Description
+  description: The extended caption for the image
+pages:
+- _gallery/test-gallery.md
+- _gallery/the-title-of-the-gallery.md

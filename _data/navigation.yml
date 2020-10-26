@@ -4,6 +4,8 @@
   link: /news.html
 - name: Events
   link: /events.html
+- name: Gallery
+  link: /gallery.html
 - name: About
   link: /about/
   items:
