@@ -24,6 +24,13 @@ sections:
   templates:
   - gallery
 - type: directory
+  path: _videos
+  label: Videos
+  create: documents
+  match: "**/*"
+  templates:
+  - videos
+- type: directory
   path: _venues
   label: Venues
   create: documents
