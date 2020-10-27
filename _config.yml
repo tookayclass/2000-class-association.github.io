@@ -36,6 +36,8 @@ collections:
     output: false
   gallery:
     output: true
+  videos:
+    
 
 defaults:
   - scope:

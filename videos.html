@@ -1,0 +1,22 @@
+---
+layout: default
+title: Video Gallery
+---
+
+<main>
+  <div id="videoGallery">
+    {%- comment -%} Loop through all the videos  {%- endcomment -%}
+    {% for video in site.videos reversed %}
+        <div class="videoContainer">
+            <a href="{{ video.videoUrl }}"><h1 class="title">{{ video.title }}</h1></a>
+            <div class="model-box">
+                <iframe class="model" src="{{ video.videoUrl }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="caption strongCaption">{{ video.caption }}</p>
+            <p class="extendedCaption">{{ video.extendedCaption | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+            <hr />
+        </div>
+    {% endfor %}
+  </div>
+  <hr/>
+</main>
