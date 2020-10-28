@@ -34,12 +34,6 @@ fields:
   label: Caption
   description: The caption for the video.
 - name: extendedCaption
-  type: text
-  config:
-    required: false
-  label: Extended Caption
-  description: The extended caption/description for the video
-- name: extendedcaptionnew
   type: textarea
   default: ''
   config:
@@ -47,4 +41,5 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: extendedCaptionNew
+  label: Extended Caption
+  description: The extended caption/description for the video
