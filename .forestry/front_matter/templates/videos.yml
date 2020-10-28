@@ -1,0 +1,45 @@
+---
+label: Videos
+hide_body: true
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: The title for the video
+- name: videoUrl
+  type: text
+  config:
+    required: true
+  label: Video URL
+  description: The URL for the video (copied straight from the Youtube address bar)
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+  description: The date the video was taken (video in the gallery are sorted in reverse
+    order using this date)
+  default: now
+- name: caption
+  type: text
+  config:
+    required: true
+  label: Caption
+  description: The caption for the video.
+- name: extendedCaption
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Extended Caption
+  description: The extended caption/description for the video

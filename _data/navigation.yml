@@ -6,6 +6,8 @@
   link: /events.html
 - name: Gallery
   link: /gallery.html
+- name: Videos
+  link: /videos.html
 - name: About
   link: /about/
   items:
