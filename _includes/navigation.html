@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="{{ site.url }}"><img src={{ "/assets/img/logo-2000-class-association-sm-inv.png" | absolute_url }} height="30" alt="2000 Class Association logo"></a>
   
@@ -8,16 +9,54 @@
   <div class="collapse navbar-collapse" id="navbarTop">
     <ul class="navbar-nav mr-auto">
       {% for item in site.data.navigation %}
-        {% if page.url == item.link %}
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ item.link | absolute_url }}">{{ item.name }} <span class="sr-only">(current)</span></a>
-          </li>
-        {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
-          </li>
-        {% endif %}
+        {%- comment -%} Include each navigation item {%- endcomment -%}
+        {% include navigationItem.html item=item %}
+
       {% endfor %}
+      {%- comment -%} Javascript to handle various menu behaviours (touch vs mouse etc) {%- endcomment -%}
+      <script>
+
+        var navbarClickmode = false;
+
+        $(document).ready(function(){
+          $('.dropdown-subtoggle').on('click mouseenter mouseleave', function() {
+            console.log(event.type);
+            //If the given event is a click set us to click mode
+            if (event.type == "click") {
+              navbarClickmode = true;
+              // We are in click mode so remove the hover css element
+              $('.dropdown-submenu-hover').removeClass('dropdown-submenu-hover');
+
+              console.log("previous was click");
+            //If the given event isn't a click and we aren't in click mode already then do nothing
+            } else if (navbarClickmode == false) {
+              return false;
+            }
+            
+            if (event.type == "click") {
+              //Get whether this menu item is currently active
+              var currentlyActive = $(this).next().hasClass('show');
+              console.log(currentlyActive);
+              
+              // Remove show from all sub menus
+              $('.nav-list.dropdown-menu').removeClass('show');
+              
+              // Force show on any level above this item
+              $(this).parents().addClass('show');
+              
+              // If it wasn't active when clicked then make it active, otherwise leave it as it not shown
+              if (currentlyActive == false){
+                $(this).next().addClass('show');
+              }
+
+              //Prevent anything else from running
+              event.preventDefault();
+              event.stopPropagation();
+              
+            }
+          });
+        });
+      </script>
     </ul>
   </div>
 </nav>
