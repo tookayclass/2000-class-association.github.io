@@ -9,31 +9,7 @@
     <ul class="navbar-nav mr-auto">
       {% for item in site.data.navigation %}
         
-        {%- comment -%} If we have sub-items {%- endcomment -%}
-        {% if item.items %}
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-          </li>
-
-        {% else %}
-          {%- comment -%} If no subitems {%- endcomment -%}
-          {% if page.url == item.link %}
-            <li class="nav-item active">
-                  <a class="nav-link" href="{{ item.link | absolute_url }}">{{ item.name }} <span class="sr-only">(current)</span></a>
-            </li>
-          {% else %}
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="{{ item.link | absolute_url }}">{{ item.name }}</a>
-            </li>
-          {% endif %}
-
-        {% endif %}
+        {% include navigationItem.html item=item %}
         
 
         

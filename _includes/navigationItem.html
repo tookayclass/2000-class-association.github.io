@@ -1,0 +1,28 @@
+{% assign currentItem = include.item %}
+
+{%- comment -%} If we have sub-items {%- endcomment -%}
+{% if currentItem.items %}
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{{ currentItem.link }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ currentItem.name }}</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ currentItem.link }}">{{ currentItem.name }}</a>
+            
+            {% for subItem in currentItem.items %}
+                <a class="dropdown-item" href="{{ subItem.link }}">{{ subItem.name }}</a>
+            {% endfor %}
+        </div>
+    </li>
+
+{%- comment -%} If no subitems {%- endcomment -%}
+{% else %}
+    {% if page.url == currentItem.link %}
+    <li class="nav-item active">
+            <a class="nav-link" href="{{ currentItem.link | absolute_url }}">{{ currentItem.name }} <span class="sr-only">(current)</span></a>
+    </li>
+    {% else %}
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="{{ currentItem.link | absolute_url }}">{{ currentItem.name }}</a>
+    </li>
+    {% endif %}
+
+{% endif %}
