@@ -39,3 +39,11 @@
     link: /about/measurement-rules.html
   - name: Event and series rules
     link: /about/event-series-rules.html
+    items:
+      - name: Measurement rules
+        link: /about/measurement-rules.html
+      - name: Event and series rules
+        link: /about/event-series-rules.html
+        items:
+          - name: Measurement rules
+            link: /about/measurement-rules.html

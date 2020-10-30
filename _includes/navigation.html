@@ -68,6 +68,22 @@
         
 
       {% endfor %}
+      <script>
+
+    $(document).ready(function(){
+        console.log('setting up handlers');
+        $('.navbarDropdownMenuLink').on('click mouseover', function() {
+                console.log('Hit the function');
+                $('.nav-list.dropdown-menu').removeClass('show');
+                $(this).parent().siblings().children('ul').removeClass('show');
+                $(this).parents().addClass('show');
+                $(this).next().toggleClass('show');
+                event.preventDefault();
+                event.stopPropagation();
+        }
+    )});
+
+    </script>
     </ul>
   </div>
 </nav>
