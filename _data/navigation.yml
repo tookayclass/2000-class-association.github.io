@@ -17,6 +17,24 @@
     link: /about/constitution.html
   - name: Committee
     link: /about/committee.html
+    items:
+      - name: Join us
+        link: /about/join.html
+      - name: Constitution
+        link: /about/constitution.html
+      - name: Committee
+        link: /about/committee.html
+      - name: Measurement rules
+        link: /about/measurement-rules.html
+        items:
+          - name: Events
+            link: /events.html
+          - name: Gallery
+            link: /gallery.html
+          - name: Videos
+            link: /videos.html
+      - name: Event and series rules
+        link: /about/event-series-rules.html
   - name: Measurement rules
     link: /about/measurement-rules.html
   - name: Event and series rules

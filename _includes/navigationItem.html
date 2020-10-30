@@ -8,16 +8,16 @@
     {% assign containsCurrentPage = currentItem.items | where: "link", page.url | size %}
     
     {%- comment -%} The start of the dropdown menu and first element {%- endcomment -%}
-    <li class="nav-item dropdown{% if containsCurrentPage > 0 %} active {% endif %}">
-        <a class="nav-link dropdown-toggle" href="{{ currentItem.link }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ currentItem.name }}</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li class="nav-item dropdown{% if include.dropdownSubItem %}-submenu {% endif %} {% if containsCurrentPage > 0 %} active {% endif %}">
+        <a class="{% if include.dropdownSubItem %} dropdown-item {% else %} nav-link dropdown-toggle {% endif %} " href="{{ currentItem.link }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ currentItem.name }}</a>
+        <ul class="nav-list dropdown-menu" aria-labelledby="navbarDropdown">
             <li class="nav-item">
                 <a class="dropdown-item{% if currentItem.link == page.url %} active {% endif %}" href="{{ currentItem.link }}">{{ currentItem.name }}</a>
             </li>
             {%- comment -%} Loop through the other menu items {%- endcomment -%}
             {% for subItem in currentItem.items %}
                 
-                {% include navigationItem.html item=subItem dropdown=true %}
+                {% include navigationItem.html item=subItem dropdown=true dropdownSubItem=true%}
 
             {% endfor %}
 
