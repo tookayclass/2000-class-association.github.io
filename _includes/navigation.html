@@ -14,7 +14,7 @@
     border-radius: 0 6px 6px 6px;
 }
 
-.dropdown-submenu:hover>.dropdown-menu {
+.dropdown-submenu-hover:hover>.dropdown-menu {
     display: block;
 }
 
@@ -69,19 +69,122 @@
 
       {% endfor %}
       <script>
+{%- comment -%} 
+    
+    Mobile Hover Issue:
+      - I believe the issue with menus staying open on mobile is caused by the belief you are still "hovering" on the item.
+      - Suggested solution is that when click mode is enabled the hover option is disabled. I think the easiest way to do this is to have the thing that does attached to a removable class.
+    
+    Logic Check:
+     - When clicking on mobile we get mouseenter and click
+     - When clicking again we get mouseenter and click
+
+     - So if any click switches us to "click mode" then clicks are the only thing that matter after that. If not in "click" mode we use hovers
+ 
+ 
+ {%- endcomment -%}
+
+    var navbarClickmode = false;
 
     $(document).ready(function(){
+        
+
+
         console.log('setting up handlers');
-        $('.navbarDropdownMenuLink').on('click mouseover', function() {
+        {%- comment -%} $('.navbarDropdownMenuLink').on('click mouseover', function() {
+                
                 console.log('Hit the function');
+                
+                // Check if item is currently shown or not (to decide if click is showing or hiding)
+                $(this).hasClass('show');
+                
+                // Remove show from all elements
                 $('.nav-list.dropdown-menu').removeClass('show');
+                
+                // Remove show from any other submenus (on the same level)
                 $(this).parent().siblings().children('ul').removeClass('show');
+                
+                // Force show on any level above this item
                 $(this).parents().addClass('show');
+                
+                // Toggle the item for this click on or off
                 $(this).next().toggleClass('show');
+                
+                //Prevent anything else from running
                 event.preventDefault();
                 event.stopPropagation();
-        }
-    )});
+              }
+        ); {%- endcomment -%}
+
+        $('.dropdown-subtoggle').on('click mouseenter mouseleave', function() {
+                console.log(event.type);
+                {%- comment -%} If the given event is a click set this to click mode{%- endcomment -%}
+                if (event.type == "click") {
+                  navbarClickmode = true;
+                  // We are in click mode so remove the hover css element
+                  $('.dropdown-submenu-hover').removeClass('dropdown-submenu-hover');
+
+                  console.log("previous was click");
+                {%- comment -%} If the given event isn't a click and we aren't in click mode already then do nothing {%- endcomment -%}
+                } else if (navbarClickmode == false) {
+                  return false;
+                }
+
+                {%- comment -%} If its a click do the click stuff which is:
+                  - Close all other items
+                  - Expand the required item and keep its parent open
+                  - Maybe move it into the screen?  
+                {%- endcomment -%}
+                if (event.type == "click") {
+                  //Get whether this menu item is currently active
+                  var currentlyActive = $(this).next().hasClass('show');
+                  console.log(currentlyActive);
+                  
+                  // Remove show from all sub menus
+                  $('.nav-list.dropdown-menu').removeClass('show');
+                  
+                  // Force show on any level above this item
+                  $(this).parents().addClass('show');
+                  
+                  // If it wasn't active when clicked then make it active, otherwise leave it as it not shown
+                  if (currentlyActive == false){
+                    $(this).next().addClass('show');
+                  }
+
+                  //Prevent anything else from running
+                  event.preventDefault();
+                  event.stopPropagation();
+                  
+                }
+
+
+                {%- comment -%} If we are in click mode and the event is a mouseover then check if its this or another one and if another:
+                  - Close any other sub elements
+                  - turn off click mode
+                  If its this one:
+                  - Do nothing
+                   {%- endcomment -%}
+                
+
+
+                
+
+              }
+        );
+
+        {%- comment -%} $('.dropdown-subtoggle').parent().on('mouseenter', function() {
+                alert("mouseenter: "+ $(this));
+              }
+        );
+
+        $('.dropdown-subtoggle').parent().on('mouseleave', function() {
+                alert("mouseleave: "+ $(this));
+              }
+        ); {%- endcomment -%}
+    
+    
+    
+    });
 
     </script>
     </ul>
