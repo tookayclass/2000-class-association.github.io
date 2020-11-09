@@ -12,13 +12,7 @@
     {%- comment -%} The start of the dropdown menu and first element {%- endcomment -%}
     <li class="nav-item dropdown{% if include.dropdownSubItem %}-submenu dropdown-submenu-hover{% endif %} {% if containsCurrentPage > 0 %} active {% endif %}">
         <a class="navbarDropdownMenuLink{% if include.dropdownSubItem %} dropdown-subtoggle dropdown-item {% else %} nav-link dropdown-toggle {% endif %} " href="{% if include.dropdownSubItem %}#{% else %} {{ currentItem.link }} {% endif %}" id="navbarDropdownMenuLink" role="button" {% if include.dropdownSubItem %} 
-            onclickNOT="
-                $('.nav-list.dropdown-menu').removeClass('show');
-                $(this).parent().siblings().children('ul').removeClass('show');
-                $(this).parents().addClass('show');
-                $(this).next().toggleClass('show');
-                event.preventDefault();
-                event.stopPropagation();
+           
         " {% else %} data-toggle="dropdown" {% endif %}  aria-haspopup="true" aria-expanded="false">{{ currentItem.name }}</a>
         <ul class="nav-list dropdown-menu" aria-labelledby="navbarDropdown">
             <li class="nav-item">
