@@ -1,4 +1,14 @@
 <style>
+@media (max-width: 768px) {
+  {%- comment -%} .navbar-nav .dropdown-menu {
+  overflow: scroll;
+  max-height: 50vh;
+  } {%- endcomment -%}
+  .navbar {
+    overflow: scroll;
+    max-height: 100%;
+  }
+}
 
 .dropdown-submenu {
     position: relative;
