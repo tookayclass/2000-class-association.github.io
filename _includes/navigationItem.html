@@ -1,0 +1,44 @@
+{% assign currentItem = include.item %}
+
+
+{%- comment -%} If we have sub-items {%- endcomment -%}
+{% if currentItem.items %}
+    
+    {%- comment -%} Check whether the current page is inside this dropdown menu {%- endcomment -%}
+    {% assign containsCurrentPage = currentItem.items | where: "link", page.url | size %}
+    
+    
+
+    {%- comment -%} The start of the dropdown menu and first element {%- endcomment -%}
+    <li class="nav-item dropdown{% if include.dropdownSubItem %}-submenu dropdown-submenu-hover{% endif %} {% if containsCurrentPage > 0 %} active {% endif %}">
+        <a class="navbarDropdownMenuLink{% if include.dropdownSubItem %} dropdown-subtoggle dropdown-item {% else %} nav-link dropdown-toggle {% endif %} " href="{% if include.dropdownSubItem %}#{% else %} {{ currentItem.link }} {% endif %}" id="navbarDropdownMenuLink" role="button" {% if include.dropdownSubItem %} 
+           
+        " {% else %} data-toggle="dropdown" {% endif %}  aria-haspopup="true" aria-expanded="false">{{ currentItem.name }}</a>
+        <ul class="nav-list dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item">
+                <a class="dropdown-item{% if currentItem.link == page.url %} active {% endif %}" href="{{ currentItem.link }}">{{ currentItem.name }}</a>
+            </li>
+            {%- comment -%} Loop through the other menu items {%- endcomment -%}
+            {% for subItem in currentItem.items %}
+                
+                {% include navigationItem.html item=subItem dropdown=true dropdownSubItem=true%}
+
+            {% endfor %}
+
+        </ul>
+    </li>
+
+{%- comment -%} If no subitems {%- endcomment -%}
+{% else %}
+    {%- comment -%} Check if current page or not and then generate the nav element for this page (note the inline check of dropdown vs standard nav-item as well) {%- endcomment -%}
+    {% if page.url == currentItem.link %}
+    <li class="nav-item">
+            <a class="{% if include.dropdown %} dropdown-item {% else %} nav-link {% endif %} active" href="{{ currentItem.link | absolute_url }}" aria-current="page">{{ currentItem.name }} <span class="sr-only">(current)</span></a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+        <a class="{% if include.dropdown %} dropdown-item {% else %} nav-link {% endif %} " href="{{ currentItem.link | absolute_url }}">{{ currentItem.name }}</a>
+    </li>
+    {% endif %}
+
+{% endif %}
