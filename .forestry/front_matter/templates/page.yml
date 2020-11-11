@@ -27,3 +27,5 @@ fields:
     max: '10'
     labelField: title
   label: Attachments
+pages:
+- about/Rules&Guides/hull-colours.md
