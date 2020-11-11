@@ -27,6 +27,16 @@ fields:
     required: true
   label: Sponsorship
   description: Sponsored event or activity
+- name: moreInfo
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: More Info
+  description: Further info about the sponsor
 - name: order
   type: number
   default: 0

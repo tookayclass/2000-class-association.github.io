@@ -1,0 +1,20 @@
+---
+layout: default
+title: Our Sponsors
+---
+
+<main>
+  <div id="sponsors">
+    {%- comment -%} Loop through all the sponsors  {%- endcomment -%}
+    {% assign sortedSponsors = site.sponsors | sort: "order" %}
+    {% for sponsor in sortedSponsors %}
+        <div class="sponsor">
+            <a href="{{ sponsor.website }}"><h1 class="title">{{ sponsor.name }}</h1>
+            <img src="{{ sponsor.logo }}"></a>
+            <h2>{{ sponsor.sponsorship }}</h2>
+            <p class="extendedCaption">{{ sponsor.moreInfo | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+            <hr />
+        </div>
+    {% endfor %}
+  </div>
+</main>

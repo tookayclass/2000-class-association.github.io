@@ -1,6 +1,4 @@
-@import "gallery";
-@import "videoGallery";
-@import "navigation";
+@import "gallery", "videoGallery", "sponsors", "navigation";
 
 html {
   font-size: 0.85rem;
@@ -58,4 +56,8 @@ main {
       height: 16px;
     }
   }
+}
+
+a:hover {
+  text-decoration: none;
 }

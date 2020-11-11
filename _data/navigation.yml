@@ -13,6 +13,8 @@
   items:
   - name: Join us
     link: /about/join.html
+  - name: Sponsors
+    link: /sponsors.html
   - name: Constitution
     link: /about/constitution.html
   - name: Committee
