@@ -1,7 +1,6 @@
 ---
 title: Hull Colours
 attachments: []
-published: false
 
 ---
 Not sure what colour your boat is? The original Laser 2000 was produced in a range of colours. The most common topsides are Purple, Navy Blue and Race Blue, but examples of Yellow, Charcoal Grey and Vela Grey (generally known as 'White') boats can also be found.
