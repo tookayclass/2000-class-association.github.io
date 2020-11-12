@@ -4,6 +4,8 @@
   link: /news.html
 - name: Events
   link: /events.html
+- name: Results
+  link: /results
 - name: Gallery
   link: /gallery.html
 - name: Videos

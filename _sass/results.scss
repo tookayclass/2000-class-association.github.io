@@ -1,0 +1,24 @@
+// Center the div.results inside .results-container without changing their HTML format (because they come from SailWave)
+.results-container {
+    text-align: center;
+    padding-top: 5vh;
+}
+div.results, div.results div {
+    display: inline-block;
+}
+div.results-container .backlink {
+    margin: 0px;
+}
+div.results {
+    div {
+        // Hide the pasted in headers
+        h1, h2,h3 {
+            display: none;
+        }
+        // Reset text alignment for the table itself
+        table {
+            text-align: initial;
+        }
+    }
+    
+}
