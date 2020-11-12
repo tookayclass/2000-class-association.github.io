@@ -1,4 +1,18 @@
 ---
 label: Results
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: The date (and time) the results are for. Used to sort the results.
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
