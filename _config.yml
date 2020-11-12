@@ -37,6 +37,8 @@ collections:
   gallery:
     output: true
   videos:
+  results:
+    output: true
     
 
 defaults:
@@ -59,6 +61,11 @@ defaults:
       type: "gallery"
     values:
       layout: "gallery"
+  - scope:
+      path: ""
+      type: "results"
+    values:
+      layout: "results"
 
 plugins:
   - jekyll-sitemap

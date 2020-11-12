@@ -1,0 +1,11 @@
+---
+title: Results
+layout: page
+---
+This page is the results homepage and will list all the results below in a nice little summary of whats available.
+
+{% for result in site.results %}
+    {{ result.title }}
+    {{ result.url }}
+    {{ result.date | date: "%A, %B %e, %Y" }}
+{% endfor %}
