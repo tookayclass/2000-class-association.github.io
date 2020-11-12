@@ -17,6 +17,13 @@ sections:
   templates:
   - event
 - type: directory
+  path: _results
+  label: Results
+  create: documents
+  match: "**/*"
+  templates:
+  - results
+- type: directory
   path: _gallery
   label: Gallery
   create: documents
@@ -37,11 +44,6 @@ sections:
   match: "**/*"
   templates:
   - venue
-- type: jekyll-pages
-  label: Pages
-  create: all
-  templates:
-  - page
 - type: directory
   path: _sponsors
   label: Sponsors
@@ -49,6 +51,11 @@ sections:
   match: "**/*"
   templates:
   - sponsor
+- type: jekyll-pages
+  label: Pages
+  create: all
+  templates:
+  - page
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
