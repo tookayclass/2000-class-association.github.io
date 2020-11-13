@@ -1099,6 +1099,6 @@ date: 2020-11-01 10:00:00 +0000
 
 <p><a></a><br><a></a></p>
 
-<p>Sailwave Scoring Software 2.28.2<br><a href="[http://www.sailwave.com](http://www.sailwave.com "http://www.sailwave.com")" target="_blank">www.sailwave.com</a></p>
+<p>Sailwave Scoring Software 2.28.2<br><a href="http://www.sailwave.com" target="_blank">www.sailwave.com</a></p>
 
 </div>
