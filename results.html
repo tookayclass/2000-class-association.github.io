@@ -2,10 +2,16 @@
 title: Results
 layout: page
 ---
-This page is the results homepage and will list all the results below in a nice little summary of whats available.
+<p>All recent results are listed below sorted by date and time.</p>
+
 
 {% for result in site.results %}
-    {{ result.title }}
-    {{ result.url }}
-    {{ result.date | date: "%A, %B %e, %Y" }}
+    <a href="{{ result.url }}">
+        <h1 class="title results">
+            {{ result.title }}
+        </h1>
+        <h6 class="date results">
+            {{ result.date | date: "%A, %B %e, %Y at %I:%M%P" }}
+        </h6>
+    </a>
 {% endfor %}
