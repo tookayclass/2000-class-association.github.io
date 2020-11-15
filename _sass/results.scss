@@ -6,7 +6,9 @@
 div.results, div.results div {
     display: inline-block;
 }
-
+div.results-container .backlink {
+    margin: 0px;
+}
 div.results {
     div {
         // Hide the pasted in headers
