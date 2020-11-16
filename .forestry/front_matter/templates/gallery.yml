@@ -31,7 +31,7 @@ fields:
   config:
     required: false
   label: Gallery Description
-  description: The extended caption for the image
+  description: The description of the gallery
 pages:
 - _gallery/test-gallery.md
 - _gallery/the-title-of-the-gallery.md
