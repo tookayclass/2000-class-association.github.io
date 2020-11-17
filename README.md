@@ -2,52 +2,27 @@
 
 ## How does this work?
 
-This website is build using the static website generator Jekyll. That means that
-all content is generated as static pages: all pages look the same for all
-visitors and there is no dynamic content.
+This website is build using the static website generator Jekyll. That means that all content is generated as static pages: all pages look the same for all visitors and there is no dynamic content.
 
+## Basic Tasks
+
+Editing guidance can be found [here](./_docs/README.md).
 
 ## Technically
 
-- [GitHub Pages][ghp] is the service that runs [Jekyll][jekyll] to generate HTML
-  pages from [Markdown-formatted][markdown] text files in this repository. Every
-  time a change is made, a new set of HTML pages is generated. The [Ruby][ruby]
-  libraries required to build the website are defined in the `Gemfile` file.
+- [GitHub Pages][ghp] is the service that runs [Jekyll][jekyll] to generate HTML pages from [Markdown-formatted][markdown] text files in this repository. Every time a change is made, a new set of HTML pages is generated. The [Ruby][ruby] libraries required to build the website are defined in the `Gemfile` file.
 
-- The website is also rebuilt daily. This is done by the [Travis CI][travis] 
-  service as configured in the `.travis.yml` file. The daily rebuild is required
-  to update pages containing time-dependant information such as upcoming events.
-  
-  Daily build status: 
-  [![Build Status](https://travis-ci.com/2000-class-association/2000-class-association.github.io.svg?branch=master)](https://travis-ci.com/2000-class-association/2000-class-association.github.io)
+- Every time a change is made, a GitHub Actions workflow will run verifying that all generated pages are valid HTML5. If this action fails, log messages should be inspected and content or page templates updated as required for the  validation test to pass.
 
-- Every time a change is made, a GitHub Actions workflow will run verifying that
-  all generated pages are valid HTML5. If this action fails, log messages should
-  be inspected and content or page templates updated as required for the 
-  validation test to pass.
+- General website configuration and meta data are included in the `_config.yml` file.
 
-- General website configuration and meta data are included in the `_config.yml`
-  file.
+- Content can be edited through the [Forestry.io][forestry] service. This is a  user-friendly Content Management System built for static websites. The website administrator will need to assign the relevant permissions in Forestry.io to  edit this website. Alternatively, content could be directly edited from the  GitHub repository.
 
-- Content can be edited through the [Forestry.io][forestry] service. This is a 
-  user-friendly Content Management System built for static websites. The website
-  administrator will need to assign the relevant permissions in Forestry.io to 
-  edit this website. Alternatively, content could be directly edited from the 
-  GitHub repository.
+- In addition to HTML pages, the website generates an [RSS feed][rss] (`/feed.xml`) and an [iCalendar][ical] of upcoming events (`/events.ics`).
 
-- In addition to HTML pages, the website generates an [RSS feed][rss]
-  (`/feed.xml`) and an [iCalendar][ical] of upcoming events (`/events.ics`).
+- The `CNAME` file contains the domain name this website responds to. DNS  settings must be configured as documented (see [Using a custom domain with  GitHub Pages][domain]).
 
-- The `CNAME` file contains the domain name this website responds to. DNS 
-  settings must be configured as documented (see [Using a custom domain with 
-  GitHub Pages][domain]).
-
-- To test the website on your own (Windows 10) computer, install Docker, clone
-  the repository and run the script `run.ps1` in PowerShell. Then open a 
-  webbrowser and load the website using the URL `http://localhost:4000/`.
-
-- To build the website and verify that all pages are valid HTML5 run the script 
-  `validate.ps1`.
+- To modify the design or functionality of the site it is best to set up a local development environment to allow you to make and test changes. This is a complex undertaking if you are unfamiliar with Software Development, Git or Jekyll but a basic how to guide is available [here](./_docs/Development Basics.md). 
 
 
 ## DNS settings
