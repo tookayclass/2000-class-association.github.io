@@ -5,7 +5,7 @@ layout: page
 <p>All recent results are listed below sorted by date and time.</p>
 
 
-{% for result in site.results %}
+{% for result in site.results reversed %}
     <a href="{{ result.url }}">
         <h1 class="title results">
             {{ result.title }}
