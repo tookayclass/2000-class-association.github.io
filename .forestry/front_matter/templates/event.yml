@@ -55,7 +55,3 @@ fields:
     max: '10'
     labelField: title
   label: Attachments
-pages:
-- _events/itchenor-sailing-club-chichester-harbour.md
-- _events/millennium-series-3-at-staunton-harold-sc-near-derby.md
-- _events/millennium-series-4-at-wilsonian-sc.md
