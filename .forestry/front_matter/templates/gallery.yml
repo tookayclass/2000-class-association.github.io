@@ -33,5 +33,6 @@ fields:
   label: Gallery Description
   description: The description of the gallery
 pages:
+- _gallery/2018-national-championship-at-torbay-yacht-club-torquay..md
 - _gallery/test-gallery.md
 - _gallery/the-title-of-the-gallery.md
