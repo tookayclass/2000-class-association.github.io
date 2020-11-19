@@ -1,5 +1,10 @@
 @import "gallery", "videoGallery", "sponsors", "navigation", "results";
 
+// Font Awesome imports
+// Font folder path relative to compiled CSS folder
+$fa-font-path: "../fonts/fontawesome";
+@import "fontawesome/fontawesome.scss", "fontawesome/regular.scss", "fontawesome/solid.scss";
+
 html {
   font-size: 0.85rem;
 }
