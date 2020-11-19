@@ -19,17 +19,38 @@
     
     
     <div class="gallery" id="{{ elementId }}">
-        {%- comment -%} Loop through every image in the collection {%- endcomment -%}
-          
-        {% for image in include.gallery.images%}
-            {%- comment -%} Create the image div, the extra values are used by the gallery popup {%- endcomment -%}
-            <div  class="image"  
-                  data-src="{{ image }}">
-              <img src="{{ image }}" data-src="{{ image }}">
-              
-            </div>
-        {% endfor %}
+        
+        {%- comment -%} If this is a summary view (for the gallery homepage) {%- endcomment -%}
+        {% if include.summary %}
+            {%- comment -%} Loop through every image in the collection {%- endcomment -%}
+            {% for image in include.gallery.images limit:12 %}
+                {%- comment -%} Create the image div, the extra values are used by the gallery popup {%- endcomment -%}
+                <div  class="image"  
+                    data-src="{{ image }}">
+                <img src="{{ image }}" data-src="{{ image }}">
+                
+                </div>
+            {% endfor %}
+            {%- comment -%} If there are more than 12 images show the View rest of photos link {%- endcomment -%}
+            {% if include.gallery.images.size > 12 %}
+                <div class="fullGalleryLink">
+                    <a href="/gallery.html"><p class='{{ gallery.url }}'>View all photos in gallery...</p></a>
+                </div>
+            {% endif %}
+
+        {% else %}
+            {%- comment -%} Loop through every image in the collection {%- endcomment -%}
+            {% for image in include.gallery.images limit:12 %}
+                {%- comment -%} Create the image div, the extra values are used by the gallery popup {%- endcomment -%}
+                <div  class="image"  
+                    data-src="{{ image }}">
+                <img src="{{ image }}" data-src="{{ image }}">
+                
+                </div>
+            {% endfor %}       
+        {% endif %}
     </div>
+
     {%- comment -%} The script that creates the javascript gallery effect {%- endcomment -%}
     <script> 
     lightGallery(document.getElementById('{{ elementId }}'), {
