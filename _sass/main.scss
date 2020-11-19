@@ -3,7 +3,7 @@
 // Font Awesome imports
 // Font folder path relative to compiled CSS folder
 $fa-font-path: "../fonts/fontawesome";
-@import "fontawesome/fontawesome.scss", "fontawesome/regular.scss", "fontawesome/solid.scss";
+@import "fontawesome/fontawesome.scss", "fontawesome/regular.scss", "fontawesome/solid.scss", "fontawesome/brands.scss";
 
 html {
   font-size: 0.85rem;
@@ -65,4 +65,7 @@ main {
 
 a:hover {
   text-decoration: none;
+}
+a.homepageHeaderLink {
+  color: inherit;
 }

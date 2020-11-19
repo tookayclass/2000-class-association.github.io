@@ -3,9 +3,9 @@
 
 {% assign now = site.time | date: '%s' %}
 
-<h2>Upcoming events</h2>
+<a href="/events" class="homepageHeaderLink"><h2>Upcoming events</h2></a>
 <p class="mb-3">
-  {% include icon-link.html url="/events.ics" icon="calendar" text="Add this calendar to your device" %}
+  {% include icon-link.html url="/events.ics" icon="fa fa-calendar" text="Add this calendar to your device" %}
 </p>
 
 {% for event in site.events %}
