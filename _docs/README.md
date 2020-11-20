@@ -63,6 +63,16 @@ Resources can be added in much the same way as they can be modified. There are a
 - Pages do not automatically show up on the menus, if they need to appear on the menu manual editing of the menu file is required.
   - Rules & Guides pages ARE automatically added to the Rules&Guides listing home page
 
+**Events** 
+
+- Events require a start and end date but venue is an optional setting
+- Documents attached to events display below the event as "Relevant Documents"
+
+**Documents**
+
+- Documents can be added via the Media Manager, or attached directly to Events.
+- Documents added via the Media Manager are not automatically available in any pages but can be added using the method [here](Documents.md).
+
 **Results**
 
 Results are added direct from the Sailwave HTML export file and detailed instructions for that are contained [here](./Results Uploading.md).
