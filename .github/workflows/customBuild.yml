@@ -1,0 +1,53 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+#  pull_request:
+#    branches:
+#      - main
+#      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout main
+      uses: actions/checkout@v2
+      with:
+        path: ${{ github.workspace }}/main
+    
+    - name: Checkout gh-pages
+      uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+        path: ${{ github.workspace }}/_site
+    
+    - name: Clear out gh-pages branch repo
+      run: |
+          cd ${{ github.workspace }}/_site
+          git rm -f -r ./
+    
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}/main:/srv/jekyll \
+        -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest \
+        /bin/bash -c "jekyll build --future"
+    
+    # sudo chmod needed because docker messes up permissions when building
+    # touch .nojekyll makes sure Github doesn't try to revuild jekyll site
+    - name: Commit to gh-pages
+      run: |
+          sudo chmod -R 777 ${{ github.workspace }}/_site
+          cd ${{ github.workspace }}/_site
+          touch .nojekyll
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "${{ github.event.head_commit.message }}"
+          git push
