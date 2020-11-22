@@ -17,25 +17,23 @@ jobs:
     steps:
     - name: Checkout main
       uses: actions/checkout@v2
-      with:
-        path: $GITHUB_WORKSPACE/main
     
     - name: Checkout gh-pages
       uses: actions/checkout@v2
       with:
         ref: gh-pages
-        path: $GITHUB_WORKSPACE/_site
+        path: ${{ github.workspace }}/_site
     
     - name: Clear out gh-pages branch repo
       run: |
-          cd $GITHUB_WORKSPACE/_site
+          cd ${{ github.workspace }}/_site
           git rm -f -r ./
     
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
-        -v $GITHUB_WORKSPACE/main:/srv/jekyll \
-        -v $GITHUB_WORKSPACE/_site:/srv/jekyll/_site \
+        -v ${{ github.workspace }}:/srv/jekyll \
+        -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest \
         /bin/bash -c "jekyll build --future"
     
@@ -43,8 +41,8 @@ jobs:
     # touch .nojekyll makes sure Github doesn't try to revuild jekyll site
     - name: Commit to gh-pages
       run: |
-          sudo chmod -R 777 $GITHUB_WORKSPACE/_site
-          cd $GITHUB_WORKSPACE/_site
+          sudo chmod -R 777 ${{ github.workspace }}/_site
+          cd ${{ github.workspace }}/_site
           touch .nojekyll
           git config user.name github-actions
           git config user.email github-actions@github.com
