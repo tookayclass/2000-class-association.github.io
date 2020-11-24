@@ -40,6 +40,7 @@ jobs:
     # sudo chmod needed because docker messes up permissions when building
     # touch .nojekyll makes sure Github doesn't try to revuild jekyll site
     - name: Commit to gh-pages
+      if: ${{ github.actor != 'nektos/act' }}
       run: |
           sudo chmod -R 777 ${{ github.workspace }}/_site
           cd ${{ github.workspace }}/_site
