@@ -1,7 +1,3 @@
----
-layout: default
-title: Gallery
----
 {%- comment -%} Using https://github.com/sachinchoolur/lightgallery.js for the gallery box {%- endcomment -%}
 
 <main>
@@ -12,12 +8,16 @@ title: Gallery
 
   {%- comment -%} Loop through all galleries in the site {%- endcomment -%}
   <div id="multigallerycontainer">
-    {% for gallery in site.gallery %}
+    <span class="page-count">Page {{ include.galleryPaginator.page }} of {{ include.galleryPaginator.total_pages }}</span>
+    {% for gallery in include.galleryPaginator.posts %}
       
       {% include gallery.html gallery=gallery url=true summary=true %}
         
       <hr />
     {% endfor %}
+
+    {% include paginationNav.html navPaginator=include.galleryPaginator %}
+
   </div>
 
 </main>

@@ -27,6 +27,23 @@ lang: en_GB
 future: true  # Publish future dated news and events
 chart_key: Navionics_webapi_03675
 
+permalink: pretty
+
+
+pagination:
+  debug: false
+  enabled: true
+  sort_reverse: true
+  enabled: true
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  title: ':title - page :num'
+  limit: 0
+  trail:
+    before: 2
+    after: 3
+
 collections:
   events:
     output: true
@@ -35,11 +52,12 @@ collections:
     sort_by: order
   venues:
     output: false
-  gallery:
-    output: true
   videos:
   results:
     output: true
+  gallery:
+    output: true
+  
     
 
 defaults:
@@ -59,19 +77,21 @@ defaults:
       layout: "page"
   - scope:
       path: ""
+      type: "results"
+    values:
+      layout: "result"
+  - scope:
+      path: ""
       type: "gallery"
     values:
       layout: "gallery"
-  - scope:
-      path: ""
-      type: "results"
-    values:
-      layout: "results"
+  
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-paginate-v2
 
 exclude:
   - Gemfile

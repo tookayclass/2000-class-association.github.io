@@ -1,15 +1,15 @@
 - name: Home
   link: /
 - name: News
-  link: /news.html
+  link: /news/
 - name: Events
-  link: /events.html
+  link: /events/
 - name: Results
-  link: /results
+  link: /results/
 - name: Gallery
-  link: /gallery.html
+  link: /gallery/
 - name: Videos
-  link: /videos.html
+  link: /videos/
 - name: About
   link: /about/
   items:
