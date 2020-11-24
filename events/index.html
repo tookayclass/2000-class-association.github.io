@@ -1,9 +1,18 @@
 ---
+layout: page
 title: Events
+pagination:
+  enabled: true
+  collection: events, results
 ---
-
+MY EVENTS PAGE
 <ul class="list-unstyled">
-  {% for event in site.events %}
+  <span class="page-count">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  {% for event in paginator.posts %}
+  <pre>
+    {{ event.collection }}
+  </pre>
     <li>
       <h3 class="text-muted">{% include daterange.html from=event.date to=event.date_end %}, {{ event.venue }}</h3>
       <h2><a href="{{ event.url | absolute_url }}">{{ event.title }}</a></h2>
@@ -13,4 +22,6 @@ title: Events
       <hr>
     </li>
   {% endfor %}
+  {% include paginationNav.html paginator=paginator %}
+
 </ul>

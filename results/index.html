@@ -1,11 +1,17 @@
 ---
-title: Results
 layout: page
+title: Results
+pagination:
+  enabled: true
+  collection: results
 ---
+    MY BLOODY PAGE
 <p>All recent results are listed below sorted by date and time.</p>
 
+<span class="page-count">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-{% for result in site.results reversed %}
+{% for result in paginator.posts %}
+
     <a href="{{ result.url }}">
         <h1 class="title results">
             {{ result.title }}
