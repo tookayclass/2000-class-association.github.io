@@ -1,5 +1,4 @@
 @import "gallery", "videoGallery", "sponsors", "navigation", "results";
-
 // Font Awesome imports
 // Font folder path relative to compiled CSS folder
 $fa-font-path: "../fonts/fontawesome";
@@ -33,9 +32,7 @@ main {
   }
 }
 
-.display-3 {
-  font-size: min(10vw,4.5rem);
-}
+
 
 #nautical-chart {
   width: 100%;
@@ -68,4 +65,8 @@ a:hover {
 }
 a.homepageHeaderLink {
   color: inherit;
+}
+
+span.page-count {
+  float: right;
 }

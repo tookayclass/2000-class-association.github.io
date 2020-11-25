@@ -1,11 +1,9 @@
----
-title: Results
-layout: page
----
 <p>All recent results are listed below sorted by date and time.</p>
 
+<span class="page-count">Page {{ include.resultsPaginator.page }} of {{ include.resultsPaginator.total_pages }}</span>
 
-{% for result in site.results reversed %}
+{% for result in include.resultsPaginator.posts %}
+
     <a href="{{ result.url }}">
         <h1 class="title results">
             {{ result.title }}
@@ -14,4 +12,7 @@ layout: page
             {{ result.date | date: "%A, %B %e, %Y at %I:%M%P" }}
         </h6>
     </a>
+    <hr />
 {% endfor %}
+
+{% include paginationNav.html navPaginator=include.resultsPaginator %}
