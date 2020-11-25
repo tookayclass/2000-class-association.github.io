@@ -21,4 +21,13 @@ DTSTART:19701025T020000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20201125T073336Z
+UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/2021-events-are-in-progress-of-being-finalised.html
+DTSTART;VALUE=DATE:20210101
+DTEND;VALUE=DATE:20211231
+SUMMARY:2021 Event dates are finalised! 
+URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/2021-events-are-in-progress-of-being-finalised.html
+DESCRIPTION:
+END:VEVENT
 END:VCALENDAR
