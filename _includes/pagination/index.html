@@ -1,0 +1,17 @@
+
+
+{%- comment -%} {% if page.url contains 'results' %}
+	{% assign results = paginator.posts | where [COLLECTION IS RESULTS] %}
+	{% include resultsIndex.html results=results %}
+{% endif %} {%- endcomment -%}
+
+
+    {% if page.title contains 'Events' %}
+      {% include pagination/events.html eventsPaginator=include.pagIndexPaginator %}
+    {% endif %}
+    {% if page.title contains 'Gallery' %}
+      {% include pagination/gallery.html galleryPaginator=include.pagIndexPaginator %}
+    {% endif %}
+    {% if page.title contains 'Results' %}
+      {% include pagination/results.html resultsPaginator=include.pagIndexPaginator %}
+    {% endif %}

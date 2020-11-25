@@ -4,28 +4,6 @@ title: Gallery
 pagination:
   enabled: true
   collection: gallery
+  per_page: 5
 ---
-{%- comment -%} Using https://github.com/sachinchoolur/lightgallery.js for the gallery box {%- endcomment -%}
-
-<main>
-  <script src="/assets/js/lightgallery.min.js"></script>
-  <script src="/assets/js/lg-pager.min.js"></script>
-  <script src="/assets/js/lg-share.min.js"></script>
-  <script src="/assets/js/lg-thumbnail.min.js"></script>
-
-MY GALLERY PAGE
-  {%- comment -%} Loop through all galleries in the site {%- endcomment -%}
-  <div id="multigallerycontainer">
-    <span class="page-count">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% for gallery in paginator.posts %}
-      
-      {% include gallery.html gallery=gallery url=true summary=true %}
-        
-      <hr />
-    {% endfor %}
-
-    {% include paginationNav.html paginator=paginator %}
-
-  </div>
-
-</main>
+{% include pagination/index.html pagIndexPaginator=paginator %}

@@ -5,19 +5,4 @@ pagination:
   enabled: true
   collection: results
 ---
-    MY BLOODY PAGE
-<p>All recent results are listed below sorted by date and time.</p>
-
-<span class="page-count">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-{% for result in paginator.posts %}
-
-    <a href="{{ result.url }}">
-        <h1 class="title results">
-            {{ result.title }}
-        </h1>
-        <h6 class="date results">
-            {{ result.date | date: "%A, %B %e, %Y at %I:%M%P" }}
-        </h6>
-    </a>
-{% endfor %}
+{% include pagination/index.html pagIndexPaginator=paginator %}

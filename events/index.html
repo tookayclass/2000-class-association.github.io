@@ -3,25 +3,8 @@ layout: page
 title: Events
 pagination:
   enabled: true
-  collection: events, results
+  collection: events
+  sort_reverse: false
 ---
-MY EVENTS PAGE
-<ul class="list-unstyled">
-  <span class="page-count">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-  {% for event in paginator.posts %}
-  <pre>
-    {{ event.collection }}
-  </pre>
-    <li>
-      <h3 class="text-muted">{% include daterange.html from=event.date to=event.date_end %}, {{ event.venue }}</h3>
-      <h2><a href="{{ event.url | absolute_url }}">{{ event.title }}</a></h2>
-      {{ event.content | markdownify }}
-      <a href="{{ event.url | absolute_url }}">More info &raquo;</a>
-      <a href="#">Register &raquo;</a>
-      <hr>
-    </li>
-  {% endfor %}
-  {% include paginationNav.html paginator=paginator %}
-
-</ul>
+{% include pagination/index.html pagIndexPaginator=paginator %}
