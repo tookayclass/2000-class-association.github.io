@@ -15,9 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Cancel Previous Runs
+      if: ${{ github.actor != 'nektos/act' }}
+      uses: styfle/cancel-workflow-action
+      with:
+        access_token: ${{ github.token }}
+
     - name: Checkout main
       uses: actions/checkout@v2
-    
+
     - name: Checkout gh-pages
       uses: actions/checkout@v2
       with:
