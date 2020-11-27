@@ -22,7 +22,7 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-1-bough-beech-kent/
 DTSTART;VALUE=DATE:20210410
 DTEND;VALUE=DATE:20210410
@@ -33,7 +33,7 @@ LOCATION:Bough Beech Sailing Club, Kent, TN8 7AN
 GEO:51.208596;0.140964
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-2/
 DTSTART;VALUE=DATE:20210508
 DTEND;VALUE=DATE:20210508
@@ -44,7 +44,7 @@ LOCATION:Staunton Harold Sailing Club, Derbyshire, DE73 8DL
 GEO:52.813631;12632.9
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/thorney-island-sc-chichester-harbour-coaching-weekend/
 DTSTART;VALUE=DATE:20210522
 DTEND;VALUE=DATE:20210523
@@ -55,7 +55,7 @@ LOCATION:Thorney Island SC (Chichester Harbour) , Hampshire, PO10 8DS
 GEO:50.81586;0.91046
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-3-keyhaven-yc/
 DTSTART;VALUE=DATE:20210612
 DTEND;VALUE=DATE:20210613
@@ -66,7 +66,7 @@ LOCATION:Keyhaven YC (western Solent, Hampshire) , Hampshire, SO41 0TR
 GEO:50.724933;-1.571417
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/snettisham-beach-sc-norfolk-coached-open-weekend/
 DTSTART;VALUE=DATE:20210619
 DTEND;VALUE=DATE:20210620
@@ -77,7 +77,7 @@ LOCATION:Snettisham Beach SC Norfolk , Norfolk, PE31 7RB
 GEO:52.867522;0.446768
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-4-thorney-island-sc-chichester-harbour/
 DTSTART;VALUE=DATE:20210710
 DTEND;VALUE=DATE:20210711
@@ -88,7 +88,7 @@ LOCATION:Thorney Island SC (Chichester Harbour) , Hampshire, PO10 8DS
 GEO:50.81586;0.91046
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/2021-national-championship-torbay/
 DTSTART;VALUE=DATE:20210808
 DTEND;VALUE=DATE:20210813
@@ -99,7 +99,7 @@ LOCATION:Royal Torbay Yacht Club, Devon, TQ1 2BH
 GEO:50.458515;-3.526547
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-5-stone-sc-essex/
 DTSTART;VALUE=DATE:20210904
 DTEND;VALUE=DATE:20210905
@@ -110,7 +110,7 @@ LOCATION:Stone SC, Essex, Essex, CM0 7NF
 GEO:51.720111;0.820001
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/itchenor-sc-coached-open-meeting/
 DTSTART;VALUE=DATE:20210926
 DTEND;VALUE=DATE:20210926
@@ -121,7 +121,7 @@ LOCATION:Itchenor Sailing Club , West Sussex, PO20 7AG
 GEO:50.805897;-0.865175
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T075825Z
+DTSTAMP:20201127T080034Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-6-chichester-yc/
 DTSTART;VALUE=DATE:20210929
 DTEND;VALUE=DATE:20210929
