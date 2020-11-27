@@ -7,3 +7,4 @@ attachments: []
 published: false
 
 ---
+Full weekend of training led by professional coaches and 2000 Champions.
