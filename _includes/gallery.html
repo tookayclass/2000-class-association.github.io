@@ -1,3 +1,8 @@
+{%- comment -%} 
+Jekyll-responsive-image install
+sudo apt install libmagickcore-6.q16-dev imagemagick
+{%- endcomment -%}
+
 {% assign gallery = include.gallery %}
 {%- comment -%} Create elementId for use in script targetting {%- endcomment -%}
 {% assign elementId = gallery.title | strip | remove: " " %}
@@ -14,21 +19,42 @@
     
     {% endif %}
     
+    
+    {%- comment -%} {% assign TestImage = "uploads/bg2.jpg" %} {%- endcomment -%}
+
+
     <h6 class="gallerydate">{{ gallery.date | date: "%A, %B %e, %Y" }}</h6>
     <p class="description">{{ gallery.description }}</p>
-    
-    
+                
+                
+                {%- comment -%} {% responsive_image_block %}
+                    path: {{ TestImage }}
+                    alt: "alt text"
+                {% endresponsive_image_block %} {%- endcomment -%}
+    {%- comment -%} {% responsive_image path: uploads/bg2.jpg %} {%- endcomment -%}
+
+
     <div class="gallery" id="{{ elementId }}">
         
         {%- comment -%} If this is a summary view (for the gallery homepage) {%- endcomment -%}
         {% if include.summary %}
             {%- comment -%} Loop through every image in the collection {%- endcomment -%}
             {% for image in include.gallery.images limit:12 %}
+                {%- comment -%} Capture the image path for the largest resized responsive image {%- endcomment -%}
+                {% assign relativePath = image | slice: 1, image.size %}
+                {% capture lightGalleryImagePath %}
+                {% responsive_image_block %}
+                    path: {{ relativePath }}
+                    template: _includes/responsiveLightGalleryImage.html
+                {% endresponsive_image_block %}
+                {% endcapture %}
                 {%- comment -%} Create the image div, the extra values are used by the gallery popup {%- endcomment -%}
                 <div  class="image"  
-                    data-src="{{ image }}">
-                <img src="{{ image }}" data-src="{{ image }}">
-                
+                    data-src="{{ lightGalleryImagePath | strip_newlines | strip }}">
+                {% responsive_image_block %}
+                    path: {{ relativePath }}
+                    alt: {{ image.alt }}
+                {% endresponsive_image_block %}
                 </div>
             {% endfor %}
             {%- comment -%} If there are more than 12 images show the View rest of photos link {%- endcomment -%}
