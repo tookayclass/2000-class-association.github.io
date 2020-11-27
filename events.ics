@@ -22,18 +22,29 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20201127T061737Z
+DTSTAMP:20201127T062103Z
+UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-1-bough-beech-kent/
+DTSTART;VALUE=DATE:20210410
+DTEND;VALUE=DATE:20210410
+SUMMARY:Millennium Series 1 : Bough Beech, Kent.
+URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-1-bough-beech-kent/
+DESCRIPTION:Inland venue in Kent with easy launching and close racing...
+LOCATION:Bough Beech Sailing Club, Kent, TN8 7AN
+GEO:51.208596;0.140964
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20201127T062103Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-2/
 DTSTART;VALUE=DATE:20210508
 DTEND;VALUE=DATE:20210508
-SUMMARY:Millennium Series 2 at Staunton Harold SC Derbyshire
+SUMMARY:Millennium Series 2: Staunton Harold SC Derbyshire
 URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-2/
 DESCRIPTION:Inland\, Midlands based club with a keen fleet to welcome...
 LOCATION:Staunton Harold Sailing Club, Derbyshire, DE73 8DL
 GEO:52.813631;12632.9
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T061737Z
+DTSTAMP:20201127T062103Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/thorney-island-sc-chichester-harbour-coaching-weekend/
 DTSTART;VALUE=DATE:20210522
 DTEND;VALUE=DATE:20210523
@@ -44,7 +55,7 @@ LOCATION:Thorney Island SC (Chichester Harbour) , Hampshire, PO10 8DS
 GEO:50.81586;0.91046
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201127T061737Z
+DTSTAMP:20201127T062103Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-3-keyhaven-yc/
 DTSTART;VALUE=DATE:20210612
 DTEND;VALUE=DATE:20210613
