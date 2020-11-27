@@ -21,15 +21,4 @@ DTSTART:19701025T020000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
-BEGIN:VEVENT
-DTSTAMP:20201125T142517Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/2021-events-are-in-progress-of-being-finalised/
-DTSTART;VALUE=DATE:20210101
-DTEND;VALUE=DATE:20211231
-SUMMARY:2021 Event dates are finalised! 
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/2021-events-are-in-progress-of-being-finalised/
-DESCRIPTION:
-LOCATION:Bouch Beech Sailing Club, Kent, TN8 7AN
-GEO:51.208596;0.140964
-END:VEVENT
 END:VCALENDAR
