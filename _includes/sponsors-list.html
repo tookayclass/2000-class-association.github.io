@@ -5,7 +5,7 @@
   {% for sponsor in sponsors %}
   <div class="col-md-3">
     <p><small>{{ sponsor.sponsorship }}</small></p>
-    <a href="{{ sponsor.website }}" target="_blank" title="Go to the sponsor's website">
+    <a href="{{ sponsor.website }}" rel="noreferrer" target="_blank" title="Go to the sponsor's website">
       <img src="{{ sponsor.logo }}" class="img-fluid" alt="{{ sponsor.name }} logo">
     </a>
   </div>
