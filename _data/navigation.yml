@@ -14,12 +14,12 @@
   link: /about/
   items:
   - name: Join us
-    link: /about/join.html
+    link: /about/join/
   - name: Sponsors
-    link: /sponsors.html
+    link: /sponsors/
   - name: Constitution
-    link: /about/constitution.html
+    link: /about/constitution/
   - name: Committee
-    link: /about/committee.html
+    link: /about/committee/
   - name: Rules & Guides
     link: /about/Rules&Guides/
