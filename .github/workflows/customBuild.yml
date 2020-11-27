@@ -36,7 +36,7 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll \
         -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest \
-        /bin/bash -c "jekyll build --future"
+        /bin/bash -c "apk --update add imagemagick && jekyll build --future"
     
     # sudo chmod needed because docker messes up permissions when building
     # touch .nojekyll makes sure Github doesn't try to revuild jekyll site
