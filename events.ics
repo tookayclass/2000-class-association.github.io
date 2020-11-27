@@ -22,7 +22,18 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20201127T061516Z
+DTSTAMP:20201127T061737Z
+UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-2/
+DTSTART;VALUE=DATE:20210508
+DTEND;VALUE=DATE:20210508
+SUMMARY:Millennium Series 2 at Staunton Harold SC Derbyshire
+URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-2/
+DESCRIPTION:Inland\, Midlands based club with a keen fleet to welcome...
+LOCATION:Staunton Harold Sailing Club, Derbyshire, DE73 8DL
+GEO:52.813631;12632.9
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20201127T061737Z
 UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/thorney-island-sc-chichester-harbour-coaching-weekend/
 DTSTART;VALUE=DATE:20210522
 DTEND;VALUE=DATE:20210523
@@ -31,5 +42,16 @@ URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/thorney-island-sc-c
 DESCRIPTION:Full weekend of training led by professional coaches and ...
 LOCATION:Thorney Island SC (Chichester Harbour) , Hampshire, PO10 8DS
 GEO:50.81586;0.91046
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20201127T061737Z
+UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-3-keyhaven-yc/
+DTSTART;VALUE=DATE:20210612
+DTEND;VALUE=DATE:20210613
+SUMMARY:Millennium Series 3: Keyhaven YC 
+URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-3-keyhaven-yc/
+DESCRIPTION:Sailing in the Solent directly opposite the Needles\, but...
+LOCATION:Keyhaven YC (western Solent, Hampshire) , Hampshire, SO41 0TR
+GEO:50.724933;-1.571417
 END:VEVENT
 END:VCALENDAR
