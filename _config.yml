@@ -29,6 +29,20 @@ chart_key: Navionics_webapi_03675
 
 permalink: pretty
 
+sass:
+  style: compressed
+
+responsive_image:
+  template: _includes/responsiveImage.html
+  sizes:
+    - width: 120
+    - width: 400
+    - width: 800
+    - width: 1600
+    - width: 3200
+  strip: true
+  output_path_format: assets/resized/%{filename}-%{width}x%{height}.jpeg
+
 
 pagination:
   debug: false
@@ -92,6 +106,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate-v2
+  - jekyll-responsive-image
 
 exclude:
   - Gemfile

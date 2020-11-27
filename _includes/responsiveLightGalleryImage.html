@@ -1,0 +1,6 @@
+{% comment %}
+Outputs the relative to base_url but otherwise absolute path to the largest resized file.
+For use in the lightgallery so its not loading original images
+{% endcomment %}
+{% assign largest = resized | sort: 'width' | last %}
+/{{ largest.path }}
