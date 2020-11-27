@@ -1,5 +1,5 @@
 ---
-title: Bouch Beech Sailing Club
+title: Bough Beech Sailing Club
 address: Winkhurst Green Road, Bough Beech
 place: Edenbridge
 postcode: TN8 7AN
