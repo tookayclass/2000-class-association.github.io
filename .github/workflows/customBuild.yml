@@ -17,7 +17,7 @@ jobs:
     steps:
     - name: Cancel Previous Runs
       if: ${{ github.actor != 'nektos/act' }}
-      uses: styfle/cancel-workflow-action
+      uses: styfle/cancel-workflow-action@0.6.0
       with:
         access_token: ${{ github.token }}
 
@@ -29,12 +29,12 @@ jobs:
       with:
         ref: gh-pages
         path: ${{ github.workspace }}/_site
-    
+
     - name: Clear out gh-pages branch repo
       run: |
           cd ${{ github.workspace }}/_site
           git rm -f -r ./
-    
+
     - name: Build the site in the jekyll/builder container
       run: |
         sudo chmod -R 777 ${{ github.workspace }}
@@ -43,7 +43,7 @@ jobs:
         -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest \
         /bin/bash -c "apk --update add imagemagick && jekyll build --future"
-    
+
     # sudo chmod needed because docker messes up permissions when building
     # touch .nojekyll makes sure Github doesn't try to revuild jekyll site
     - name: Commit to gh-pages
