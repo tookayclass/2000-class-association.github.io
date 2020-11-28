@@ -8,7 +8,7 @@ county: Devon
 lat: 50.458515
 lon: -3.526547
 email: ''
-website: https://rtyc.org
+website: https://rtyc.org/event/rs2000-national-championship
 telephone: '01803 292006'
 
 ---
