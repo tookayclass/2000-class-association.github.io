@@ -43,3 +43,5 @@ fields:
       format: markdown
   label: Extended Caption
   description: The extended caption/description for the video
+pages:
+- _videos/fast-family-fun.md
