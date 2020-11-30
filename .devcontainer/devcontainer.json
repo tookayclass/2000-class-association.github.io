@@ -21,7 +21,7 @@
 	"forwardPorts": [4000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "bundle install",
+	"postCreateCommand": "bundle install",
 
 	// "postCreateCommand": "bundle exec jekyll server --host=0.0.0.0",
 

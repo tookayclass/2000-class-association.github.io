@@ -6,21 +6,20 @@
         {
             "label": "Serve",
             "type": "shell",
-            "command": "bundle exec jekyll serve --livereload",
-            "group": {
-                "kind": "test",
-                "isDefault": true
-            },
-            "isBackground": true,
-        },
-        {
-            "label": "Build",
-            "type": "shell",
-            "command": "bundle exec jekyll build",
+            "command": "jekyll serve",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "jekyll build",
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }

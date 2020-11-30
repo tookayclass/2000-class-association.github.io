@@ -8,19 +8,14 @@ ENV LANG=en_US.UTF-8 \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US
 
-    # Install jekyll
-RUN gem install bundler jekyll
-
-# [Option] Install Node.js
-ARG NODE_VERSION="lts/*"
-RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"
-
-# [Optional] Uncomment this section to install additional OS packages.
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
-
-# [Optional] Uncomment this line to install additional gems.
-RUN gem install github-pages
-
-# [Optional] Uncomment this line to install global node packages.
-# RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
+# Install build-essential and download and build ImageMagick
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+&& apt-get -y install --no-install-recommends \ 
+build-essential \
+&& wget https://www.imagemagick.org/download/ImageMagick.tar.gz \
+&& tar xvzf ImageMagick.tar.gz \
+&& cd ImageMagick* \
+&& ./configure \
+&& make \
+&& make install \
+&& ldconfig /usr/local/lib
