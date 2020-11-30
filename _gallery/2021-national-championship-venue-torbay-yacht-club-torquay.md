@@ -6,7 +6,6 @@ images:
 - "/uploads/2020/11/30/a14y6854.jpg"
 - "/uploads/2020/11/30/a14y2155.jpg"
 - "/uploads/2020/11/30/a14y2154.jpg"
-- "/uploads/2020/11/30/wetransfer-6cde6c.zip"
 title: '2021 National Championship venue : Torbay Yacht Club, Torquay'
 description: 'Its a fabulous venue for the Nationals. '
 
