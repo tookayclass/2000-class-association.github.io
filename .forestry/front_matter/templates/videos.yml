@@ -44,6 +44,7 @@ fields:
   label: Extended Caption
   description: The extended caption/description for the video
 pages:
+- _videos/2021-national-championships-at-royal-torbay-yacht-club.md
 - _videos/gybe-technique-demonstration..md
 - _videos/how-and-why-to-adjust-the-main-sheet-bridle.md
 - _videos/jasper-s-top-tip-from-thorney-island-in-2019.md
