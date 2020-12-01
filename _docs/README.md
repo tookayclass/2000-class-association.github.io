@@ -57,6 +57,13 @@ Resources can be added in much the same way as they can be modified. There are a
 - **All content defaults to Draft mode, this can be turned off by clicking the indicator next to the save button so content will be displayed.** 
 - All content types apart from Venues and Sponsors are sorted (usually in reverse order) by date.
 
+**Gallery**
+- The gallery page is pretty self explanatory but does not check that what has been upload is a valid image so please make sure everything uploaded is a valid image.
+
+**Sponsors**
+- For sponsors you can order them by changing the values in the order field.
+- When creating a new sponsor you will be asked to provide a filename, we would suggest making it the name of the sponsor but it is not displayed anywhere. **You must leave the .md extension on the filename.**
+
 **Pages**
 
 - When adding pages browse to the directory you want the page to be shown in before selecting Create New.
