@@ -14,7 +14,7 @@ fields:
   config:
     required: true
   label: Video URL
-  description: The URL for the video (copied straight from the Youtube address bar)
+  description: The URL for the video (copied straight from the Youtube address bar). This must be the plain URL in the format https://www.youtube.com/watch?v=OHKJPJIIkbo without additional data on the end.
 - name: date
   type: datetime
   label: Date

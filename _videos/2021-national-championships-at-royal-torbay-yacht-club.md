@@ -1,7 +1,7 @@
 ---
 date: 2021-08-13
 title: 2021 National Championships at Royal Torbay Yacht Club
-videoUrl: https://youtu.be/gWYfFEgm_8o
+videoUrl: https://youtube.com/embed/gWYfFEgm_8o
 caption: 'Have a look at the 2021 National Championship venue. '
 extendedCaption: "We sailed the National Championship at Torbay in  2018, and we were
   so pleased we're going back in 2021. \n* Boat park on the harbour wall\n* Launch
