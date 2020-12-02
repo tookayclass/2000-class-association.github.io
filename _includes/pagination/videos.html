@@ -1,12 +1,9 @@
----
-layout: default
-title: Video Gallery
----
-
 <main>
   <div id="videoGallery">
+  <span class="page-count">Page {{ include.videosPaginator.page }} of {{ include.videosPaginator.total_pages }}</span>
+
     {%- comment -%} Loop through all the videos  {%- endcomment -%}
-    {% for video in site.videos reversed %}
+    {% for video in include.videosPaginator.posts %}
         <div class="videoContainer">
             <a href="{{ video.videoUrl }}"><h1 class="title">{{ video.title }}</h1></a>
             <div class="model-box">
@@ -17,6 +14,10 @@ title: Video Gallery
             <hr />
         </div>
     {% endfor %}
+    <div class="nothing">
+    </div>
+{% include paginationNav.html navPaginator=include.videosPaginator %}
+  
   </div>
   <hr/>
 </main>

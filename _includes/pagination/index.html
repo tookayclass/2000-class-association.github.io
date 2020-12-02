@@ -3,14 +3,15 @@ This file serves as the root of the pagination workaround I've had to write. The
 
 The work around is to have every file using pagination call this file which then sorts by the page title (and thus the collection to be displayed) and then loads the file for the right one.
 {%- endcomment -%}
-
-
-{% if page.title contains 'Events' %}
+{% if page.pagination.collection == 'events' %}
   {% include pagination/events.html eventsPaginator=include.pagIndexPaginator %}
 {% endif %}
-{% if page.title contains 'Gallery' %}
+{% if page.pagination.collection == 'gallery' %}
   {% include pagination/gallery.html galleryPaginator=include.pagIndexPaginator %}
 {% endif %}
-{% if page.title contains 'Results' %}
+{% if page.pagination.collection == 'results' %}
   {% include pagination/results.html resultsPaginator=include.pagIndexPaginator %}
+{% endif %}
+{% if page.pagination.collection == 'videos' %}
+  {% include pagination/videos.html videosPaginator=include.pagIndexPaginator %}
 {% endif %}

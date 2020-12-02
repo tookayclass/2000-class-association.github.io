@@ -1,8 +1,5 @@
 #videoGallery {
     padding-top: 5%;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-    gap: 2%;
     align-items: center;
 }
 .videoContainer a:hover {
