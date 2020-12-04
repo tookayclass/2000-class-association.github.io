@@ -14,7 +14,9 @@ fields:
   config:
     required: true
   label: Video URL
-  description: The URL for the video (copied straight from the Youtube address bar). This must be the plain URL in the format https://www.youtube.com/watch?v=OHKJPJIIkbo without additional data on the end.
+  description: The URL for the video (copied straight from the Youtube address bar).
+    This must be the plain URL in the format https://www.youtube.com/watch?v=OHKJPJIIkbo
+    without additional data on the end.
 - name: date
   type: datetime
   label: Date
@@ -52,5 +54,6 @@ pages:
 - _videos/millennium-open-meeting-at-snettisham-beach-norfolk.md
 - _videos/rob-burridge-laura-foley-debrief-at-thorney-island-2019.md
 - _videos/sarah-s-top-tip-for-champion-crewing-with-her-dad.md
+- _videos/simon-s-lockdown-lecture-may2-020-downwind-sailing-modes..md
 - _videos/tacking-technique-prot-to-starboard..md
 - _videos/tacking-technique-starboard-to-port..md
