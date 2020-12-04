@@ -1,4 +1,7 @@
 ---
+- role: H.M. Forces Representative
+  name: Matt Sargent
+  email: Matthew.Sargent330@mod.gov.uk
 - role: 'Former Chairman '
   name: Iain Yardley
   email: lavenderhelm@icloud.com
@@ -17,7 +20,7 @@
 - role: Vice Chairman
   name: John Best
   email: vicechair@2000class.org
-- role: Membership Secretary
+- role: Membership Secretaries
   name: Guy & Juie Boswell
   email: sec@2000class.org
 - role: Treasurer
