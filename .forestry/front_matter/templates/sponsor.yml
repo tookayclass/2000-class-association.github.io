@@ -48,6 +48,7 @@ fields:
   label: Order
   description: Display order
 pages:
+- _sponsors/Astral Azure.md
 - _sponsors/West Country Boat Repairs.md
 - _sponsors/hyde-sails.md
 - _sponsors/noble-marine.md
