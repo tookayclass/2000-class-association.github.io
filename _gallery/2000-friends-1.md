@@ -1,6 +1,27 @@
 ---
 date: 2020-12-04
 images:
+- "/uploads/2020/12/04/2019-08-11_5287.JPG"
+- "/uploads/2020/12/04/2019-08-11_5267.JPG"
+- "/uploads/2020/12/04/2019-08-11_5202.JPG"
+- "/uploads/2020/12/04/2019-08-11_5200.JPG"
+- "/uploads/2020/12/04/2019-08-11_5193.JPG"
+- "/uploads/2020/12/04/2019-08-11_5190.JPG"
+- "/uploads/2020/12/04/2019-08-11_5188.JPG"
+- "/uploads/2020/12/04/2019-08-11_5187.JPG"
+- "/uploads/2020/12/04/2019-08-11_5182.JPG"
+- "/uploads/2020/12/04/2019-08-11_5181.JPG"
+- "/uploads/2020/12/04/2019-08-11_5177.JPG"
+- "/uploads/2020/12/04/2019-08-11_5171.JPG"
+- "/uploads/2020/12/04/2019-08-11_5169.JPG"
+- "/uploads/2020/12/04/2019-08-11_5166.JPG"
+- "/uploads/2020/12/04/2019-08-11_5163.JPG"
+- "/uploads/2020/12/04/2019-08-11_5162.JPG"
+- "/uploads/2020/12/04/2019-08-11_5160.JPG"
+- "/uploads/2020/12/04/2019-08-11_5157.JPG"
+- "/uploads/2020/12/04/2019-08-11_5156.JPG"
+- "/uploads/2020/12/04/2019-08-11_5153.JPG"
+- "/uploads/2020/12/04/2019-08-11_5148.JPG"
 - "/uploads/2020/12/04/p7134543.JPG"
 - "/uploads/2020/12/04/p7134529.JPG"
 - "/uploads/2020/12/04/p7134507.JPG"
@@ -25,6 +46,5 @@ images:
 title: '2000 Friends! '
 description: How many of these 2000 Friends do you know? Or indeed, how many have
   you forgotten? !
-published: false
 
 ---
