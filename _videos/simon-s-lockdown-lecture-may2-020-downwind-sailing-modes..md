@@ -1,6 +1,6 @@
 ---
 date: 2020-05-18
-title: 'Simon''s Lockdown Lecture, May2 020: downwind sailing modes. '
+title: 'Simon''s Lockdown Lecture, May 2020: downwind sailing modes. '
 videoUrl: https://youtu.be/sZpwXWskFhs
 caption: 'There was no sailing in May 2020 so Simon''s Zoom lecture was re-recorded
   for you. '

@@ -59,7 +59,6 @@ sections:
 - type: document
   path: _data/committee.csv
   label: Committee
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
