@@ -1,6 +1,10 @@
 ---
 date: 2020-12-04
 images:
+- "/uploads/2020/12/04/p7134543.JPG"
+- "/uploads/2020/12/04/p7134529.JPG"
+- "/uploads/2020/12/04/p7134507.JPG"
+- "/uploads/2020/12/04/p7134486.JPG"
 - "/uploads/2020/12/04/pa194634.JPG"
 - "/uploads/2020/12/04/img_8886.JPG"
 - "/uploads/2020/12/04/img_8775.JPG"
