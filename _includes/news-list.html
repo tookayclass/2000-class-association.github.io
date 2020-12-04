@@ -1,6 +1,6 @@
 <a class="homepageHeaderLink" href="/news"><h2>News and articles</h2></a>
 <p class="mb-3">
-  {% include icon-link.html url="/feed.xml" icon="fa fa-rss" text="Subscribe to this news feed" %}
+  {% include icon-link.html url="/feed.xml" icon="fa fa-rss" text="Subscribe to this RSS news feed" %}
 </p>
 
 {% for post in site.posts %}
@@ -14,4 +14,4 @@
   </div>
 {% endfor %}
 
-<a href="{{ "/news.html" | absolute_url }}">More news and articles &raquo;</a>
+<a href="{{ "/news/" | absolute_url }}">More news and articles &raquo;</a>

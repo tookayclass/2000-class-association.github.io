@@ -15,7 +15,7 @@ sudo apt install libmagickcore-6.q16-dev imagemagick
     
     {% else %}
     
-        <h1>{{ gallery.title }}</h1> <a href="/gallery.html"><p class='backlink'>Back to gallery homepage</p></a>
+        <h1>{{ gallery.title }}</h1> <a href="/gallery/"><p class='backlink'>Back to gallery homepage</p></a>
     
     {% endif %}
     
@@ -60,7 +60,7 @@ sudo apt install libmagickcore-6.q16-dev imagemagick
             {%- comment -%} If there are more than 12 images show the View rest of photos link {%- endcomment -%}
             {% if include.gallery.images.size > 12 %}
                 <div class="fullGalleryLink">
-                    <a href="/gallery.html"><p class='{{ gallery.url }}'>View all photos in gallery...</p></a>
+                    <a href="{{ include.gallery.url }}"><p class='{{ include.gallery.url }}'>View all photos in gallery...</p></a>
                 </div>
             {% endif %}
 
