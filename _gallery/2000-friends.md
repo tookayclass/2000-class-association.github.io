@@ -1,6 +1,11 @@
 ---
 date: 2020-12-04
 images:
+- "/uploads/2020/12/04/caps-4-some-copy.jpg"
+- "/uploads/2020/12/04/2018-07-16_2534.JPG"
+- "/uploads/2020/12/04/2018-07-16_2527.JPG"
+- "/uploads/2020/12/04/2018-07-16_2526.JPG"
+- "/uploads/2020/12/04/2018-07-16_2510.JPG"
 - "/uploads/2020/12/04/dsc_0157.jpg"
 - "/uploads/2020/12/04/p8253183.JPG"
 - "/uploads/2020/12/04/fsw0u7akugtlikkcseo-s3hkyerf6q592vojigqzoaa-2.jpg"
