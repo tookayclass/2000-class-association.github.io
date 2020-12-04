@@ -1,0 +1,47 @@
+- role: President
+  name: Trevor Bradley
+  email: president@2000class.org
+  
+- role: Chairman
+  name: Kevin O'Brien
+  email: chair@2000class.org
+  
+- role: Vice Chairman
+  name: John Best
+  email: vicechair@2000class.org
+  
+- role: Membership Secretary
+  name: Guy & Juie Boswell
+  email: sec@2000class.org
+  
+- role: Treasurer
+  name: Helen Phillips
+  email: accounts@2000class.org
+  
+- role: Sailing Secretary
+  name: Rob Burridge
+  email: sailsec@2000class.org
+  
+- role: Northern Representative
+  name: James Macgregor
+  email: northrep@2000class.org
+  
+- role: Millennium Mutterings Editor
+  name: Sarah Yardley
+  email: editor@2000class.org
+  
+- role: Technical Officer
+  name: Richard Hudson
+  email: tech@2000class.org
+  
+- role: Youth Representative
+  name: Ian Hudson
+  email: youth@2000class.org
+  
+- role: Builders Representative
+  name: Alex Newton-Southon
+  email: build@2000class.org
+  
+- role: Publicity Officer
+  name: Mark Foley
+  email: media@2000class.org

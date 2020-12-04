@@ -57,7 +57,7 @@ sections:
   templates:
   - page
 - type: document
-  path: _data/committee.csv
+  path: _data/committee.yml
   label: Committee
 upload_dir: uploads
 public_path: "/uploads"
