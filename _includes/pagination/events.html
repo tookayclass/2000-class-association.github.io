@@ -11,7 +11,9 @@
       <h2><a href="{{ event.url | absolute_url }}">{{ event.title }}</a></h2>
       {{ event.content | markdownify }}
       <a href="{{ event.url | absolute_url }}">More info &raquo;</a>
-      <a href="#">Register &raquo;</a>
+      {% if event.regLink %}
+        <a href="{{ event.regLink }}">Register &raquo;</a>
+      {% endif %}
       <hr>
     </li>
   {% endfor %}

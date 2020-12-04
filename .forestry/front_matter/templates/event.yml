@@ -55,6 +55,11 @@ fields:
     max: '10'
     labelField: title
   label: Attachments
+- type: text
+  name: regLink
+  label: Registration Link
+  config:
+    required: false
 pages:
 - _events/2021-national-championship-torbay.md
 - _events/itchenor-sc-coached-open-meeting.md
