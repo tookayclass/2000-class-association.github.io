@@ -101,7 +101,7 @@ images:
 - "/uploads/2020/12/04/dsc_0226.jpg"
 - "/uploads/2020/12/04/dsc_0244.jpg"
 - "/uploads/2020/12/04/dsc_0071.jpg"
-title: '2000 Friends! '
+title: 'There''s a lot of 2000 Friends! '
 description: How many of these 2000 Friends do you know? Or indeed, how many have
   you forgotten? !
 
