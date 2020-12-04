@@ -33,6 +33,7 @@ fields:
   label: Gallery Description
   description: The description of the gallery
 pages:
+- _gallery/2000-friends.md
 - _gallery/2018-national-championship-at-torbay-yacht-club-torquay..md
 - _gallery/2021-national-championship-venue-torbay-yacht-club-torquay.md
 - _gallery/stone-sc-millennium-series-2019.md
