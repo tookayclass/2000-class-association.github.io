@@ -1,6 +1,7 @@
 ---
 date: 2020-12-04
 images:
+- "/uploads/2020/12/04/dsc_0157.jpg"
 - "/uploads/2020/12/04/p8253183.JPG"
 - "/uploads/2020/12/04/fsw0u7akugtlikkcseo-s3hkyerf6q592vojigqzoaa-2.jpg"
 - "/uploads/2020/12/04/qj-to3plk_qg9pxgypa195uysnvkfg8i2psjeqxidws-2.jpg"
