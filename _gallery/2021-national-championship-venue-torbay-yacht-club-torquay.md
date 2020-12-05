@@ -1,6 +1,7 @@
 ---
 date: 2020-11-30
 images:
+- "/uploads/2020/12/05/img-20180809-wa0004.jpg"
 - "/uploads/2020/12/05/2018-08-06_2676.JPG"
 - "/uploads/2020/12/05/2018-08-06_2648.JPG"
 - "/uploads/2020/12/05/2018-08-06_2622.JPG"
@@ -15,6 +16,6 @@ title: '2021 National Championship venue : Torbay Yacht Club, Torquay'
 description: 'Its a fabulous venue for the Nationals. A boat park on the harbour wall.
   Launch from a concrete slipway into the marina. A short sail to the race area. Club
   a 5 minute walk from the boat park. Enjoy the RTYC ballroom, bar, dining room and
-  garden all with fabulous Torbay views. '
+  garden all with fabulous Torbay views. An expert race organisation. '
 
 ---
