@@ -1,7 +1,7 @@
 {% assign navPaginator = include.navPaginator %}
 
-
-<nav aria-label="page navigation">
+{% if navPaginator.total_pages != 1 %}
+  <nav aria-label="page navigation">
     <ul class="pagination justify-content-center">
 
         <li class="page-item {% if paginator.previous_page == nil %} disabled {% endif %}">
@@ -28,3 +28,4 @@
         </li>  
     </ul>
   </nav>
+{% endif %}
