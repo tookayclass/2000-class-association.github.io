@@ -14,5 +14,9 @@ Usage:
     /{{ i.path | uri_escape }} {{ i.width }}w,
 {% endfor %}
 {% endcapture %}
+{%- comment -%} Trim down whitespace from the srcset and remove the trailling coma {%- endcomment -%}
+{% assign whitespacedSrcset = srcset | strip_newlines | replace " ", "" %}
+{% assign srcSetSize = whitespacedSrcset | size | minus: 1 %}
+{% assign trimmedSrcSet = whitespacedSrcset | slice: 0, srcSetSize %}
 
-<img src="/{{ largest.path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }}">
+<img src="/{{ largest.path }}" alt="{{ alt }}" srcset="{{ trimmedSrcSet }}" sizes="{{ sizes }}">

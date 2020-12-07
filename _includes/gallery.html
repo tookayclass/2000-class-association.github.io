@@ -5,7 +5,7 @@ sudo apt install libmagickcore-6.q16-dev imagemagick
 
 {% assign gallery = include.gallery %}
 {%- comment -%} Create elementId for use in script targetting {%- endcomment -%}
-{% assign elementId = gallery.title | strip | remove: " " %}
+{% assign elementId = gallery.id | strip | remove: " " | prepend: "class" %}
 
 <div class="gallerycontainer">
     {%- comment -%} If we have been asked to include the URL to the page for this gallery {%- endcomment -%}
@@ -54,6 +54,7 @@ sudo apt install libmagickcore-6.q16-dev imagemagick
                 {% responsive_image_block %}
                     path: {{ relativePath }}
                     alt: {{ image.alt }}
+                    sizes: 130px
                 {% endresponsive_image_block %}
                 </div>
             {% endfor %}
@@ -66,12 +67,23 @@ sudo apt install libmagickcore-6.q16-dev imagemagick
 
         {% else %}
             {%- comment -%} Loop through every image in the collection {%- endcomment -%}
-            {% for image in include.gallery.images limit:12 %}
+            {% for image in include.gallery.images %}
                 {%- comment -%} Create the image div, the extra values are used by the gallery popup {%- endcomment -%}
+                {% assign relativePath = image | slice: 1, image.size %}
+                {% capture lightGalleryImagePath %}
+                {% responsive_image_block %}
+                    path: {{ relativePath }}
+                    template: _includes/responsiveLightGalleryImage.html
+                {% endresponsive_image_block %}
+                {% endcapture %}
                 <div  class="image"  
-                    data-src="{{ image }}">
-                <img src="{{ image }}" data-src="{{ image }}">
-                
+                    data-src="{{ lightGalleryImagePath | strip_newlines | strip }}">
+                {%- comment -%} <img src="{{ image }}" data-src="{{ image }}"> {%- endcomment -%}
+                {% responsive_image_block %}
+                    path: {{ relativePath }}
+                    alt: {{ image.alt }}
+                    sizes: "130px"
+                {% endresponsive_image_block %}
                 </div>
             {% endfor %}       
         {% endif %}

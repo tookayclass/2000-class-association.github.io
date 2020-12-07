@@ -35,7 +35,7 @@ sass:
 responsive_image:
   template: _includes/responsiveImage.html
   sizes:
-    - width: 120
+    - width: 130
     - width: 400
     - width: 800
     - width: 1600
