@@ -33,7 +33,10 @@ jobs:
     - name: Clear out gh-pages branch repo
       run: |
           cd ${{ github.workspace }}/_site
+          mv assets/resized ../resized
           git rm -f -r ./
+          mkdir assets
+          mv ../resized assets/resized
 
     - name: Build the site in the jekyll/builder container
       run: |
