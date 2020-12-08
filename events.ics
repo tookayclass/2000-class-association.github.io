@@ -22,166 +22,166 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-1-bough-beech-kent/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/millennium-series-1-bough-beech-kent/
 DTSTART;VALUE=DATE:20210410
 DTEND;VALUE=DATE:20210410
 SUMMARY:Millennium Series 1 : Bough Beech, Kent.
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-1-bough-beech-kent/
+URL:https://www.2000class.org/events/millennium-series-1-bough-beech-kent/
 DESCRIPTION:Inland venue in Kent with easy launching and close racing...
 LOCATION:Bough Beech Sailing Club, Kent, TN8 7AN
 GEO:51.208596;0.140964
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-rutland-sc-2-day-sprint/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/northern-series-rutland-sc-2-day-sprint/
 DTSTART;VALUE=DATE:20210424
 DTEND;VALUE=DATE:20210425
 SUMMARY:Northern Series @ Rutland SC : 2 Day Sprint
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-rutland-sc-2-day-sprint/
+URL:https://www.2000class.org/events/northern-series-rutland-sc-2-day-sprint/
 DESCRIPTION:Large professionally run club in the Midlands with a huge...
 LOCATION:Rutland Water SC, Rutland, LE15 8HJ
 GEO:52.646517;-0.660195
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-2/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/millennium-series-2/
 DTSTART;VALUE=DATE:20210508
 DTEND;VALUE=DATE:20210508
 SUMMARY:Millennium Series 2: Staunton Harold SC Derbyshire
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-2/
+URL:https://www.2000class.org/events/millennium-series-2/
 DESCRIPTION:Inland\, Midlands based club with a keen fleet to welcome...
 LOCATION:Staunton Harold Sailing Club, Derbyshire, DE73 8DL
 GEO:52.813631;12632.9
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-staunton-harold-sc-1-day-open/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/northern-series-staunton-harold-sc-1-day-open/
 DTSTART;VALUE=DATE:20210508
 DTEND;VALUE=DATE:20210508
 SUMMARY:Northern Series @ Staunton Harold SC :1 day open
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-staunton-harold-sc-1-day-open/
+URL:https://www.2000class.org/events/northern-series-staunton-harold-sc-1-day-open/
 DESCRIPTION:Inland\, Midlands based club with a keen fleet to welcome...
 LOCATION:Staunton Harold Sailing Club, Derbyshire, DE73 8DL
 GEO:52.813631;12632.9
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/thorney-island-sc-chichester-harbour-coaching-weekend/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/thorney-island-sc-chichester-harbour-coaching-weekend/
 DTSTART;VALUE=DATE:20210522
 DTEND;VALUE=DATE:20210523
 SUMMARY:Thorney Island SC (Chichester Harbour) coaching weekend
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/thorney-island-sc-chichester-harbour-coaching-weekend/
+URL:https://www.2000class.org/events/thorney-island-sc-chichester-harbour-coaching-weekend/
 DESCRIPTION:Full weekend of training led by professional coaches and ...
 LOCATION:Thorney Island SC (Chichester Harbour) , Hampshire, PO10 8DS
 GEO:50.81586;0.91046
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-3-keyhaven-yc/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/millennium-series-3-keyhaven-yc/
 DTSTART;VALUE=DATE:20210612
 DTEND;VALUE=DATE:20210613
 SUMMARY:Millennium Series 3: Keyhaven YC 
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-3-keyhaven-yc/
+URL:https://www.2000class.org/events/millennium-series-3-keyhaven-yc/
 DESCRIPTION:Sailing in the Solent directly opposite the Needles\, but...
 LOCATION:Keyhaven YC (western Solent, Hampshire) , Hampshire, SO41 0TR
 GEO:50.724933;-1.571417
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-bala-sc-2-day-event/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/northern-series-bala-sc-2-day-event/
 DTSTART;VALUE=DATE:20210619
 DTEND;VALUE=DATE:20210620
 SUMMARY:Northern Series @ Bala SC : 2 day event 
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-bala-sc-2-day-event/
+URL:https://www.2000class.org/events/northern-series-bala-sc-2-day-event/
 DESCRIPTION:2 day event that is part of the Great British Sailing Cha...
 LOCATION:Bala SC , Gwynedd, LL23 7BS
 GEO:52.898215;-3.603986
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/snettisham-beach-sc-norfolk-coached-open-weekend/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/snettisham-beach-sc-norfolk-coached-open-weekend/
 DTSTART;VALUE=DATE:20210619
 DTEND;VALUE=DATE:20210620
 SUMMARY:Snettisham Beach SC Norfolk: Coached Open Weekend
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/snettisham-beach-sc-norfolk-coached-open-weekend/
+URL:https://www.2000class.org/events/snettisham-beach-sc-norfolk-coached-open-weekend/
 DESCRIPTION:An open meeting where you can learn. Coaches will be on h...
 LOCATION:Snettisham Beach SC Norfolk , Norfolk, PE31 7RB
 GEO:52.867522;0.446768
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-ullswater-yc-2-days-lord-birkett-trophy/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/northern-series-ullswater-yc-2-days-lord-birkett-trophy/
 DTSTART;VALUE=DATE:20210703
 DTEND;VALUE=DATE:20210704
 SUMMARY:Northern Series @ Ullswater YC : 2 days Lord Birkett Trophy 
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-ullswater-yc-2-days-lord-birkett-trophy/
+URL:https://www.2000class.org/events/northern-series-ullswater-yc-2-days-lord-birkett-trophy/
 DESCRIPTION:The event is known as the ‘Lord Birkett Memorial Trophy’ ...
 LOCATION:Ullswater Yacht Club, Cumbria, CA10 2NA
 GEO:54.590868;-2.856816
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-4-thorney-island-sc-chichester-harbour/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/millennium-series-4-thorney-island-sc-chichester-harbour/
 DTSTART;VALUE=DATE:20210710
 DTEND;VALUE=DATE:20210711
 SUMMARY:Millennium Series 4: Thorney Island SC , Chichester Harbour
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-4-thorney-island-sc-chichester-harbour/
+URL:https://www.2000class.org/events/millennium-series-4-thorney-island-sc-chichester-harbour/
 DESCRIPTION:Sailing in the beautiful Chichester harbour at a club wit...
 LOCATION:Thorney Island SC (Chichester Harbour) , Hampshire, PO10 8DS
 GEO:50.81586;0.91046
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/2021-national-championship-torbay/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/2021-national-championship-torbay/
 DTSTART;VALUE=DATE:20210808
 DTEND;VALUE=DATE:20210813
 SUMMARY:2021 National Championship: Torbay  
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/2021-national-championship-torbay/
+URL:https://www.2000class.org/events/2021-national-championship-torbay/
 DESCRIPTION:Fantastic holiday venue in the English Riviera\, with a p...
 LOCATION:Royal Torbay Yacht Club, Devon, TQ1 2BH
 GEO:50.458515;-3.526547
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-5-stone-sc-essex/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/millennium-series-5-stone-sc-essex/
 DTSTART;VALUE=DATE:20210904
 DTEND;VALUE=DATE:20210905
 SUMMARY:Millennium Series 5 : Stone SC, Essex
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-5-stone-sc-essex/
+URL:https://www.2000class.org/events/millennium-series-5-stone-sc-essex/
 DESCRIPTION:Stone Sailing Club is a small and friendly place to sail\...
 LOCATION:Stone SC, Essex, Essex, CM0 7NF
 GEO:51.720111;0.820001
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-carsington-sc-2-day-event/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/northern-series-carsington-sc-2-day-event/
 DTSTART;VALUE=DATE:20210918
 DTEND;VALUE=DATE:20210919
 SUMMARY:Northern Series @ Carsington SC: 2 day event
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/northern-series-carsington-sc-2-day-event/
+URL:https://www.2000class.org/events/northern-series-carsington-sc-2-day-event/
 DESCRIPTION:2 day event with a class start (event shared with V3000)....
 LOCATION:Carsington SC, Derbyshire, DE6 1SU
 GEO:53.056117;-1.649083
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/itchenor-sc-coached-open-meeting/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/itchenor-sc-coached-open-meeting/
 DTSTART;VALUE=DATE:20210926
 DTEND;VALUE=DATE:20210926
 SUMMARY:Itchenor SC : Coached Open Meeting
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/itchenor-sc-coached-open-meeting/
+URL:https://www.2000class.org/events/itchenor-sc-coached-open-meeting/
 DESCRIPTION:An open meeting where you can learn. Coaches will be on h...
 LOCATION:Itchenor Sailing Club , West Sussex, PO20 7AG
 GEO:50.805897;-0.865175
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20201208T091054Z
-UID:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-6-chichester-yc/
+DTSTAMP:20201208T092318Z
+UID:https://www.2000class.org/events/millennium-series-6-chichester-yc/
 DTSTART;VALUE=DATE:20210929
 DTEND;VALUE=DATE:20210929
 SUMMARY:Millennium Series 6 : Chichester YC
-URL:https://2000class.unifiedtechnicalsolutions.co.uk/events/millennium-series-6-chichester-yc/
+URL:https://www.2000class.org/events/millennium-series-6-chichester-yc/
 DESCRIPTION:This club has fantastic facilities and racing is immediat...
 LOCATION:Chichester Yacht Club, West Sussex, West Sussex, PO20  7EJ
 GEO:50.80495;-0.829977
