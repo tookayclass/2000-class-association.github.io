@@ -80,7 +80,7 @@ Now that your container is started you need to start the test server inside the 
 
 If you look to the bottom of your window you should see a lower pane and tab in it called Terminal. If you don't see it go to ```View -> Terminal```.
 
-In this box you need to type ```bundle exec jekyll serve```. It may present an error message, if it does follow the provide instructions (usually to run ```bundle install```).
+In this box you need to type ```jekyll serve --config _config.yml,_config.docker.yml```. This command starts the development server and overrides some default values to ensure the development environment works correctly. It may present an error message, if it does follow the provided instructions (usually to run ```bundle install```).
 
 The server should now be running, if you visit [http://localhost:4000](http://localhost:4000) in your preferred web browser you should see the site.
 
