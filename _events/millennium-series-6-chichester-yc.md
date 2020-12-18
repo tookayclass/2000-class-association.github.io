@@ -1,6 +1,6 @@
 ---
 venue: _venues/chichester-yacht-club-west-sussex.md
-title: 'Millennium Series 6 : Chichester YC'
+title: 'West Country Boat Repairs Millennium Series 6 : Chichester YC'
 date: 2021-09-25
 date_end: 2021-09-25
 attachments:
