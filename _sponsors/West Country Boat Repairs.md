@@ -7,6 +7,5 @@ sponsorship: 'West Country Boat Repairs : Millennium Series 2021 Sponsors'
 moreInfo: For 20+ years Pete has been running boat repair businesses based in North
   Somerset and the surrounding areas. We can safely say there is not a repair on an
   RS200, RS400, Enterprise and Fireball we have not tackled!
-published: false
 
 ---
