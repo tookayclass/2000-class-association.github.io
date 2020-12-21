@@ -1,7 +1,7 @@
 ---
 order: 1
 name: West Country Boat Repairs
-logo: "/uploads/2020/11/30/west-country-boat-repairs.png"
+logo: "/uploads/2020/12/21/fb-1-copy.jpg"
 website: http://www.westcountryboatrepairs.co.uk/
 sponsorship: 'West Country Boat Repairs : Millennium Series 2021 Sponsors'
 moreInfo: For 20+ years Pete has been running boat repair businesses based in North
