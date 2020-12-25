@@ -16,3 +16,7 @@ The Millennium Series was taken in 2019 and 2020 by Simon Horsfield and Katie Bu
 The prizes available from West Country Boat Repairs include boat and foils overhauls, and days on WCBR’s boat repair courses at their workshops in Gloucestershire. There are also places on racing sailing training courses.
 
 “This is a great fit for the 2000 Class “said Mark Foley, 2000 Publicity Officer. “We are constantly dealing with people asking us where they can get their hands on a 2000, as they are snapped up when they come up for sale. So what better way to look after your boat’s resale value than get an upgrade courtesy of WCBR, or spend a day on a course learning how to keep your boat in tip top condition by yourself? Indeed, if you are not in the position to get a new boat from RS Sailing, when you see a boat for sale that needs some work, put yourself in touch with WCBR beforehand and have a chat about what the improvements you want might cost before you negotiate.”
+
+Below: Mark Foley 2000 Class publicity & Pete Vincent of West Country Boat Repairs, enjoying one of their boat repair courses in 2020.  
+
+![](/uploads/2020/12/25/2020-06-23_6546.JPG)
