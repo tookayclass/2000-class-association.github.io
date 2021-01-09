@@ -8,3 +8,11 @@ We're extremely pleased to announce that  Noble Marine Insurance have renewed th
 Noble have been impressed by the manner in which we can put their insurance expertise in front of our 280 + members by our Fast News emails, the 600 to 2000 people who regularly see our social media activity on Facebook and Instagram, the 70 + 2000 Fleet Captains at sailing clubs all over the 4 nations of the UK who can reach their 2000 club sailors, many of whom are not yet class association members. 
 
 The 2000 Class sailors have always found insuring with Noble to be a truly painless experience; their premiums are usually the best and they give our members a very useful discount in addition. Noble's claims handling is friendly , professional, quick and even sympathetic! 
+
+[https://www.noblemarine.co.uk/](https://www.noblemarine.co.uk/ "https://www.noblemarine.co.uk/")
+
+![](/uploads/2021/01/09/20190813_193654.jpg)
+
+A brace of Lauras toast Noble Marine Insurance! 
+
+Laura Holmes - Short (L) &  Laura Barnham (R) 
