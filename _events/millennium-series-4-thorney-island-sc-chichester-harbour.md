@@ -2,8 +2,8 @@
 venue: _venues/thorney-island-sc-chichester-harbour.md
 title: 'West Country Boat Repairs Millennium Series 4: Thorney Island SC , Chichester
   Harbour'
-date: 2021-07-10
-date_end: 2021-07-11
+date: 2021-07-24
+date_end: 2021-07-25
 attachments: []
 regLink: ''
 
