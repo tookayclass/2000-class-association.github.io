@@ -3,7 +3,7 @@ country: England
 title: 'Thorney Island SC (Chichester Harbour) '
 address: Church Road
 place: 'Thorney Island '
-postcode: PO10 8DS
+postcode: PO10 8DU
 county: Hampshire
 lat: 50.81586
 lon: 0.91046
