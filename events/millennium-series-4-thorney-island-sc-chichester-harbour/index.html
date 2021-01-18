@@ -302,14 +302,14 @@
 
 <script>
 var map = L.map('nautical-chart');
-map.setView([ 50.81586, 0.91046 ], 14);
+map.setView([ 50.81577, -0.90958 ], 14);
 var overlay = new JNC.Leaflet.NavionicsOverlay({
   navKey: 'Navionics_webapi_03887',
   chartType: JNC.NAVIONICS_CHARTS.NAUTICAL,
   isTransparent: false
 });
 overlay.addTo(map);
-var marker = L.marker([ 50.81586, 0.91046 ]).addTo(map);
+var marker = L.marker([ 50.81577, -0.90958 ]).addTo(map);
 marker.bindPopup("Thorney Island SC (Chichester Harbour) ").openPopup();
 </script>
 
