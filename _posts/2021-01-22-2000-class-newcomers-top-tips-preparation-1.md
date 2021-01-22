@@ -1,5 +1,5 @@
 ---
-title: 2000 Class Newcomers Top Tips - preparation
+title: 2000 Class Newcomers Top Tips - tuning
 author: Simon Horsfield and Katie Burridge
 
 ---
