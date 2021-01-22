@@ -1,5 +1,1 @@
-User-agent: *
-Disallow: /
-
-User-Agent: W3C-checklink
-Disallow:
+Sitemap: https://www.2000class.org/sitemap.xml
