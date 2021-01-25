@@ -1,5 +1,5 @@
 ---
-venue: []
+venue: _venues/web-event-on-zoom.md
 title: 'Pre-season preparation: How to get your boat in great shape for the season. '
 date: 2021-02-09
 date_end: 2021-02-09
