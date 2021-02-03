@@ -29,7 +29,7 @@ Spreader length: Measured tip to tip to the centre of the shroud wire, the measu
 
 Measured at shoulder height on the shroud using a rig tension meter 330lbs or 150kg
 
-**Halyard Datum**
+![](/uploads/2021/02/03/loos-gauge.JPG)**Halyard Datum**
 
 Firstly, tie the halyard to a long tape measure (it needs to longer then 7m) using the bobble method. Raise the halyard up to the top of the mast, then tension the halyard ensuring it is at the top. Now read the tape measure off at the goose neck it should read 5. 23m.
 
