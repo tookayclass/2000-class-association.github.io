@@ -8,6 +8,7 @@ fields:
   config:
     required: true
 pages:
+- about/Rules&Guides/2021-millennium-series.md
 - about/Rules&Guides/boat-sail-numbers-year-of-registration.md
 - about/Rules&Guides/hull-colours.md
 - about/for-sale.md
